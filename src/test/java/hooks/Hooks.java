@@ -6,6 +6,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 
+import static base_urls.ManagementonSchoolBaseUrl.setSpec2;
+
 public class Hooks {
     /*
     HOOKS : is used to run BEFORE or AFTER each SCENARIO or SCENARIO OUTLINE
@@ -14,6 +16,7 @@ public class Hooks {
     public void setUpScenario(){
       //  RUNS BEFORE EACH SCENARIO
        System.out.println("BEFORE METHODS");
+        setSpec2();
     }
     @After
     public void tearDown(Scenario scenario){

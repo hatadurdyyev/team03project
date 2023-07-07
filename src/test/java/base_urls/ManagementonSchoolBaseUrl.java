@@ -10,6 +10,7 @@ import static utilities.Authentication.generateToken;
 public class ManagementonSchoolBaseUrl {
 
     protected RequestSpecification spec;
+    public static RequestSpecification spec2;
 
     @Before//This method will run before each @Test methods.
     public void setUp() {
@@ -21,4 +22,13 @@ public class ManagementonSchoolBaseUrl {
                 .build();
 
     }
+
+    public static void setSpec2(){
+
+
+        spec2 = new RequestSpecBuilder().setBaseUri("https://managementonschools.com/app").build();
+
+
+    }
+
 }
