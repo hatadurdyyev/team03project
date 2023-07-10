@@ -48,6 +48,9 @@ public class ReusableMethods {
         FileUtils.copyFile(source, finalDestination);
         return target;
     }
+
+
+
     //========Switching Window=====//
     public static void switchToWindow(String targetTitle) {
         String origin = Driver.getDriver().getWindowHandle();
@@ -231,6 +234,8 @@ public class ReusableMethods {
         select.selectByIndex(optionIndex);
         return select.getFirstSelectedOption();
     }
+
+
 
     //    ADDING FOR VERIFYING IF AN ELEMENT IS DISPLAYED ON THE PAGE
     public static void verifyElementDisplayed(WebElement element) {

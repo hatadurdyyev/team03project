@@ -15,7 +15,9 @@ public class LoginPage {
     @FindBy(partialLinkText = "Login")
     public WebElement homeLoginLink;
      */
-@FindBy(id="username")
+    @FindBy(xpath = "//*[@class='header_link ms-2']")
+    public WebElement loginIcon;
+    @FindBy(id="username")
     public WebElement userName;
 @FindBy(id="password")
     public WebElement password;

@@ -43,14 +43,28 @@ public class ViceDeanMngPage {
     public WebElement lessonProgram;
     @FindBy(id = "react-select-2-input")
     public WebElement chooseLessons;
+
+    @FindBy(xpath = "//*[@class=' css-b62m3t-container']")
+    public WebElement selectLesson;
+    @FindBy(xpath = "//*[@class=' css-9jq23d']")
+    public WebElement cypress;
+    @FindBy(xpath = "//*[@id='react-select-2-listbox']/div[1]")
+    public WebElement cypress2;
     @FindBy(xpath = "//select[@id='day']")
     public WebElement chooseDay;
+    @FindBy(xpath = "(//*[@value='TUESDAY'])[1]")
+    public  WebElement tuesday;
     @FindBy(id = "educationTermId")
     public WebElement eduTerm;
+
+    @FindBy(xpath = "(//*[@value='2'])[1]")
+    public  WebElement springSemester;
+
     @FindBy(id = "startTime")
     public WebElement startTime;
     @FindBy(id = "stopTime")
     public WebElement stopTime;
+
     @FindBy(xpath = "(//button[.='Submit'])[3]")
     public WebElement submitButton;
     @FindBy(id = "lessonProgramId")
@@ -59,6 +73,13 @@ public class ViceDeanMngPage {
     public WebElement chooseTeacher;
     @FindBy(xpath = "(//button[.='Submit'])[4]")
     public WebElement teacherAssignmentSubmitButton;
+
+    @FindBy(css = "[class*='Toastify__toast-body'] div:nth-child(2)")
+    public WebElement successMessage;
+
+
+
+
 
 
 
