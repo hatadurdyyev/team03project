@@ -25,7 +25,10 @@ public class ContactPage {
     public WebElement message;
     @FindBy(xpath = "(//button[@type ='button'])[3]")
     public WebElement safeMessage;
-
+    @FindBy(xpath = "//div[text()='Please enter valid email']")
+    public WebElement emailErrorAlert;
+    @FindBy(xpath = "//div[@role='alert']")
+    public WebElement alert;
 
 
 
