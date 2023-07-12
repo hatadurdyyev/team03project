@@ -15,8 +15,8 @@ public class HomePage {
     public WebElement registerHome;
     @FindBy(xpath = "//a[@href='/login']")
     public WebElement loginHome;
-
-
+    @FindBy(xpath = "//button[text()='Menu']")
+    public WebElement menuButton;
 
 
 
