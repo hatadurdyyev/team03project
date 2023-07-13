@@ -16,8 +16,8 @@ public class GuestUserPage {
     @FindBy(xpath = "//h5[.='Guest User List']")
     public WebElement guestUserListTxt;
 
-    @FindBy(className = "table table-striped table-bordered table-hover")
-    public WebElement guestUserListTable;
+//    @FindBy(className = "table table-striped table-bordered table-hover")
+//    public WebElement guestUserListTable;
 
     @FindBy(xpath = "//tbody//tr[1]//td[5]//button")
     public WebElement guestUserListR1C5DeleteBtn;

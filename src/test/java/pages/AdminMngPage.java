@@ -11,6 +11,13 @@ public class AdminMngPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
+    /*  -- sample --
+    @FindBy(partialLinkText = "Login")
+    public WebElement homeLoginLink;
+     */
+
+    //https://managementonschools.com/admin-management
+
     @FindBy(xpath = "//button[text()='Menu']")
     public WebElement menuButton;
     @FindBy(xpath = "//img[@src='/static/media/logo.631e4888a6e3684fc004.png']")
@@ -47,6 +54,11 @@ public class AdminMngPage {
     public WebElement addAdminPasswordTextBox;
     @FindBy(xpath = "//button[text()='Submit']")
     public WebElement addAdminSubmitButton;
+
+
+
+
+
 
 
 }
