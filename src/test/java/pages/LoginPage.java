@@ -11,14 +11,17 @@ public class LoginPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "L//a[@href='/login']")
+    /*  -- sample --
+    @FindBy(partialLinkText = "Login")
     public WebElement homeLoginLink;
-@FindBy(id="username")
+     */
+    @FindBy(id="username")
     public WebElement userName;
-@FindBy(id="password")
+
+    @FindBy(id="password")
     public WebElement password;
 
-    @FindBy(xpath = "//*[@id=\"root\"]/div/main/div/div[1]/div/form/div[3]/button")
+    @FindBy(xpath = "//button[.='Login']")
     public WebElement loginButton;
 
 
