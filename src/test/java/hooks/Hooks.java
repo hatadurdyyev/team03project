@@ -14,9 +14,9 @@ public class Hooks {
      */
     @Before
     public void setUpScenario(){
-        //  RUNS BEFORE EACH SCENARIO
-        System.out.println("BEFORE METHODS");
-        setSpec();
+      //  RUNS BEFORE EACH SCENARIO
+       System.out.println("BEFORE METHODS");
+       setSpec();
 
     }
 

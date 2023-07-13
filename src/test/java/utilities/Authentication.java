@@ -1,6 +1,5 @@
 package utilities;
 
-
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
@@ -14,6 +13,7 @@ public class Authentication {
         return response.jsonPath().getString("token");
     }
 
+
     public static String generateToken3(){
 
         String payload = "{ \"password\": \"12345678\", \"username\": \"Project09Admin\"}";
@@ -23,5 +23,6 @@ public class Authentication {
                 .post("https://managementonschools.com/app/auth/login");
         return response.jsonPath().getString("token");
     }
+
 
 }

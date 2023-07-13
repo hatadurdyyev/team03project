@@ -12,4 +12,14 @@ public class DeanMngPage {
 
 
 
+    @FindBy(xpath = "//button[text()='Menu']")
+    public WebElement menuButton;
+
+    @FindBy(xpath = "//a[text()='Contact Get All']")
+    public WebElement contactGetAllButton;
+
+
+
+
+
 }
