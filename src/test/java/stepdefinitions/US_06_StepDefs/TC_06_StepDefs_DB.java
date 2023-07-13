@@ -4,6 +4,7 @@ import io.cucumber.java.en.Given;
 
 import java.sql.*;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class TC_06_StepDefs_DB {

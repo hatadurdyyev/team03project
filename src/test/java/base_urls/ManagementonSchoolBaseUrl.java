@@ -10,7 +10,7 @@ import static utilities.Authentication.generateToken;
 public class ManagementonSchoolBaseUrl {
 
     protected RequestSpecification spec;
-    protected static RequestSpecification spec2;
+    public static RequestSpecification spec2;
 
     @Before//This method will run before each @Test methods.
     public void setUp() {
