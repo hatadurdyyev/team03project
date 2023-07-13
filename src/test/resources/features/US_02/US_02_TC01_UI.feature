@@ -1,5 +1,5 @@
-@US_02_TC01
-Feature: US_02 Admin should be able to see the Guest User List
+@US02 @US_02_TC01
+Feature: US_02_TC01_UI Admin should be able to see the Guest User List
 
   Background: Sign in as an admin
     Given admin goes to "https://managementonschools.com/"

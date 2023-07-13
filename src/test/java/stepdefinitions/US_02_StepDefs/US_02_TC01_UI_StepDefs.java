@@ -11,7 +11,7 @@ import java.io.IOException;
 
 import static org.junit.Assert.assertTrue;
 
-public class US_02_StepDefs_UI {
+public class US_02_TC01_UI_StepDefs {
     HomePage homePage = new HomePage();
     LoginPage loginPage = new LoginPage();
     AdminMngPage adminMngPage = new AdminMngPage();
