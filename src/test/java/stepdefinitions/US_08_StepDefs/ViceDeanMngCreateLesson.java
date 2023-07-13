@@ -1,4 +1,4 @@
-package stepdefinitions;
+package stepdefinitions.US_08_StepDefs;
 
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
@@ -65,7 +65,7 @@ public class ViceDeanMngCreateLesson {
 
         int fakeLessonName1 =new Faker().number().numberBetween(0,10);
         int fakeCreditScore1 =new Faker().number().numberBetween(0,500);
-        viceDeanMngPage.lessonName.sendKeys("biol"+fakeLessonName1);
+        viceDeanMngPage.lessonName.sendKeys("abc"+fakeLessonName1);
         WaitUtils.waitFor(2);
 viceDeanMngPage.creditScore.sendKeys(fakeCreditScore1+"");
         WaitUtils.waitFor(2);
@@ -93,7 +93,7 @@ viceDeanMngPage.creditScore.sendKeys(fakeCreditScore1+"");
     public void userEntersTheLessonNameAsNumberAndSpecialCharacterAndCreditScore() {
         int fakeLessonName =new Faker().number().numberBetween(0,14);
         int fakeCreditScore =new Faker().number().numberBetween(0,500);
-        viceDeanMngPage.lessonName.sendKeys("?"+fakeLessonName);
+        viceDeanMngPage.lessonName.sendKeys("?%"+fakeLessonName);
         WaitUtils.waitFor(2);
         viceDeanMngPage.creditScore.sendKeys(fakeCreditScore+"");
         WaitUtils.waitFor(2);
