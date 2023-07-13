@@ -6,15 +6,23 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 
+import static base_urls.ManagementonSchoolBaseUrl.*;
+
 public class Hooks {
     /*
     HOOKS : is used to run BEFORE or AFTER each SCENARIO or SCENARIO OUTLINE
      */
-    @Before
+    @Before("@Api")
     public void setUpScenario(){
-      //  RUNS BEFORE EACH SCENARIO
-       System.out.println("BEFORE METHODS");
+        //  RUNS BEFORE EACH SCENARIO
+        System.out.println("BEFORE METHODS");
+        setSpec();
+
     }
+
+    @Before
+    public void setUp(){setSpec();}
+
     @After
     public void tearDown(Scenario scenario){
 //        AFTER EACH SCENARIO
@@ -27,3 +35,6 @@ public class Hooks {
         }
     }
 }
+
+
+
