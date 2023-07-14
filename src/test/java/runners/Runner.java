@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml",
                 "rerun:target/failedRerun.txt",
-                //"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         monochrome = true,
         features = "./src/test/resources/features/US_03" +
@@ -20,7 +20,7 @@ import org.junit.runner.RunWith;
         glue = {"stepdefinitions/US_03_StepDefs","hooks"}, //PATH OF STEPDEFINITIONS FOLDER
         dryRun = false , //dryRun = true : RUNS AND GENERATES ONLY MISSING STEP DEFS.
         // dryRun = false: RUN NORMAL. THIS IS DEFAULT VALUE
-        tags = "@e2e"
+        tags = "@Api"
 
 )
 public class Runner {
