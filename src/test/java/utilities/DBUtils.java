@@ -8,11 +8,11 @@ import java.util.Map;
 
 public class DBUtils {
     //    connection : used to connect to DB
-    private static Connection connection;
+    public static Connection connection;
     //    statement : used to write queries
-    private static Statement statement;
+    public static Statement statement;
     //    resultSet : used to perform DB actions such as going to specific rows, get data as string, get data as object
-    private static ResultSet resultSet;
+    public static ResultSet resultSet;
     /**
      * DBUtils.createConnection(); -> to connect to teh database
      */

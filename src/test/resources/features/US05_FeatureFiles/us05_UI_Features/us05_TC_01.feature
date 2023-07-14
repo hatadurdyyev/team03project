@@ -1,7 +1,7 @@
-@dean_mng_login
-Feature: admin_goes_to_dean_management_page
+@e2e @dean_mng_login
+Feature: admin_goes_to_dean_management_page_to_edit_dean_information
 
-  Background:
+  Background:Admin goes to the home page
   Scenario: admin_goes_to_login_page
     Given admin navigates to url "https://managementonschools.com/"
     When admin clicks to login icon
@@ -29,7 +29,5 @@ Feature: admin_goes_to_dean_management_page
 
       Examples:
         | deanName | deanSurname | deanBirthPlace | deanDateOfBirth | deanPhoneNumber | deanSSN     | deanUsername | deanPassword |
-        | Jeremy   | Doe         | London         | 05/05/2010      | 198-182-3914    | 182-32-4621 | Jeremy001    | 12345678     |
-
-
+        | Jeremy   | Doe         | London         | 13/09/1998      | 198-182-3914    | 182-32-4621 | Jeremy001    | 12345678     |
 

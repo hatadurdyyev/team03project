@@ -1,16 +1,19 @@
-package stepdefinitions;
+package stepdefinitions.US05_StepDefs.US05_UI_StepDefs;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.checkerframework.checker.units.qual.K;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import pages.DeanMngPage;
 import utilities.*;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class DeanListStepDefs {
+public class US05_UIStepDefs {
 
     DeanMngPage deanMngPage = new DeanMngPage();
     Actions actions = new Actions(Driver.getDriver());
@@ -35,32 +38,33 @@ public class DeanListStepDefs {
     public void admin_enters_password(String string) {
         deanMngPage.loginAdminPasswordForDnMng.sendKeys("12345678");
     }
+
     @When("admin click to login button")
     public void admin_click_to_login_button() {
         deanMngPage.loginButtonForDnMng.click();
         WaitUtils.waitFor(2);
     }
+
     @When("close the website")
     public void close_the_website() {
         Driver.closeDriver();
     }
 
     //----->>>>>admin can see all the dean list and pages and dean management page
-    //assertions calismiyor
     //---->>>>>admin should update deans
 
     @Given("admin clicks menu button")
     public void admin_clicks_menu_button() {
         deanMngPage.menuButton.click();
-        WaitUtils.waitFor(3);
+        WaitUtils.waitFor(1);
     }
 
     @When("admin clicks dean management option")
     public void admin_clicks_dean_management_option() {
         deanMngPage.deanMngOptionButton.click();
-        WaitUtils.waitFor(2);
+        WaitUtils.waitFor(1);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
-        WaitUtils.waitFor(2);
+        WaitUtils.waitFor(4);
     }
 
     @When("admin clicks on edit button")
@@ -125,7 +129,7 @@ public class DeanListStepDefs {
         deanMngPage.newUsernameInputEditPage.sendKeys(Keys.chord(Keys.COMMAND, "a"));
         deanMngPage.newUsernameInputEditPage.sendKeys(deanUsername);
         WaitUtils.waitFor(2);
-      }
+    }
 
     @When("admin enters dean password {string}")
     public void admin_enters_dean_password(String deanPassword) {
@@ -143,17 +147,13 @@ public class DeanListStepDefs {
     public void assert_message_displayed(String string) {
         String alertText = deanMngPage.deanUpdtScssMessage.getText();
         assertTrue(alertText.contains("Dean updated Successful"));
-        WaitUtils.waitFor(1);
+        WaitUtils.waitFor(2);
     }
 
     @Then("admin clicks on cross sign")
     public void admin_clicks_on_cross_sign() {
         deanMngPage.crossSignInEditPage.click();
         WaitUtils.waitFor(2);
+
     }
-
 }
-
-
-
-

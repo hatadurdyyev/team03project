@@ -30,8 +30,11 @@ public class DeanMngPage {
     @FindBy(xpath = "//a[.='Dean Management']")
     public WebElement deanMngOptionButton;
 
-    @FindBy(xpath = "//table//tr[4]//td[6]")
+    @FindBy(xpath = "//table//tr[7]//td[6]")
     public WebElement deanFromList;
+
+    @FindBy(xpath = "//table//tr[11]//td[6]")
+    public WebElement secondDeanFromList;
 
     @FindBy(xpath = "(//input[@id='name'])[2]")
     public WebElement newNameInputEditPage;
@@ -77,34 +80,5 @@ public class DeanMngPage {
 
     @FindBy(xpath = "//h5[text()='Dean List']")
     public WebElement deanListTitleText;
-
-    @FindBy(xpath = "(//span[@aria-hidden='true'])[3]")
-    public WebElement nextPageInDeanList;
-
-    @FindBy(xpath = "(//span[@aria-hidden='true'])[4]")
-    public WebElement theLastPageInDeanList;
-
-    @FindBy(xpath = "(//span[@aria-hidden='true'])[1]")
-    public WebElement theFirstPageInDeanListButton;
-
-    @FindBy(xpath = "//th[.='Name']")
-    public WebElement nameColumn;
-
-    @FindBy(xpath = "//th[.='Gender']")
-    public WebElement genderColumn;
-
-    @FindBy(xpath = "//th[.='Phone Number']")
-    public WebElement phone_number;
-
-    @FindBy(xpath = "//th[.='Ssn']")
-    public WebElement SsnColumn;
-
-    @FindBy(xpath = "//th[.='User Name']")
-    public WebElement usernameColumn;
-
-
-
-
-
 
 }
