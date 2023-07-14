@@ -18,6 +18,8 @@ public class LessonMngPage {
     @FindBy(id = "controlled-tab-example-tab-lessonsList")
     public WebElement lessonButton;
 
+    
+
 
 
 

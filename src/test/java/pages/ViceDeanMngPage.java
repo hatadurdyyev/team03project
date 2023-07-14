@@ -17,6 +17,8 @@ public class ViceDeanMngPage {
      */
     @FindBy(xpath = "//button[.='Menu']")
     public WebElement menuButton;
+    @FindBy(xpath = "//a[.='Vice Dean Management']")
+    public WebElement viceDeanManagementLink;
     @FindBy(xpath = "//a[.='Lesson Management']")
     public WebElement lessonManagementLink;
     @FindBy(xpath = "//a[.='Teacher Management']")
@@ -59,6 +61,23 @@ public class ViceDeanMngPage {
     public WebElement chooseTeacher;
     @FindBy(xpath = "(//button[.='Submit'])[4]")
     public WebElement teacherAssignmentSubmitButton;
+
+    @FindBy(xpath = "(//th[text() = 'Lesson'])")
+    public WebElement lessonText;
+
+    @FindBy(xpath = "(//th[text() = 'Day'])")
+    public WebElement dayText;
+
+    @FindBy(xpath = "(//th[text() = 'Start Time'])")
+    public WebElement startTimeText;
+
+    @FindBy(xpath = "(//th[text() = 'Stop Time'])")
+    public WebElement stopTimeText;
+
+
+
+
+
 
 
 

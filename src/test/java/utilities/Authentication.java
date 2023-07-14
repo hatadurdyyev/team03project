@@ -14,4 +14,15 @@ public class Authentication {
     }
 
 
+    public static String generateToken3(){
+
+        String payload = "{ \"password\": \"12345678\", \"username\": \"Project09Admin\"}";
+        Response response =  given()
+                .contentType(ContentType.JSON)
+                .body(payload)
+                .post("https://managementonschools.com/app/auth/login");
+        return response.jsonPath().getString("token");
+    }
+
+
 }
