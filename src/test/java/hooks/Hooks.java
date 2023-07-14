@@ -6,8 +6,12 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 
+<<<<<<< HEAD
 import static base_urls.ManagementonSchoolBaseUrl.setSpec;
 
+=======
+import static base_urls.ManagementonSchoolBaseUrl.*;
+>>>>>>> refs/remotes/origin/main
 
 public class Hooks {
     /*
@@ -17,6 +21,7 @@ public class Hooks {
     public void setUpScenario(){
       //  RUNS BEFORE EACH SCENARIO
        System.out.println("BEFORE METHODS");
+<<<<<<< HEAD
         setSpec();
     }
 
@@ -26,6 +31,15 @@ public class Hooks {
 
 
 
+=======
+       setSpec();
+
+    }
+
+    @Before
+    public void setUp(){setSpec();}
+
+>>>>>>> refs/remotes/origin/main
     @After
     public void tearDown(Scenario scenario){
 //        AFTER EACH SCENARIO

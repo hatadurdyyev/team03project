@@ -3,6 +3,8 @@ package stepdefinitions.US_07_StepDefs;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
+import pages.ContactPage;
 import pages.DeanMngPage;
 import pages.HomePage;
 import pages.LoginPage;
@@ -17,8 +19,8 @@ public class UI_StepDefs {
 
     HomePage managementSchoolsMainPage = new HomePage();
     LoginPage managementSchoolsLoginPage = new LoginPage();
-
     DeanMngPage deanMngPage = new DeanMngPage();
+    ContactPage contactPage = new ContactPage();
 
 
     @Given("user goes to {string}")
@@ -58,6 +60,7 @@ public class UI_StepDefs {
 
     }
 
+
     @Given("user clicks on Menu button")
     public void user_clicks_on_menu_button() throws IOException {
 
@@ -73,6 +76,19 @@ public class UI_StepDefs {
         MediaUtils.takeScreenshotOfTheEntirePage();
 
     }
+
+    @And("assert if the messages can be seen")
+    public void assertIfTheMessagesCanBeSeen() {
+
+        Assert.assertTrue(contactPage.nameSection.isDisplayed());
+        Assert.assertTrue(contactPage.emailSection.isDisplayed());
+        Assert.assertTrue(contactPage.dateSection.isDisplayed());
+        Assert.assertTrue(contactPage.subjectSection.isDisplayed());
+        Assert.assertTrue(contactPage.messageSection.isDisplayed());
+
+    }
+
+
     @When("close the app")
     public void close_the_app() throws IOException {
 

@@ -12,4 +12,5 @@
       Scenario: Look at the messages
         Given user clicks on Menu button
         When user clicks on Contact Get All button
+        And assert if the messages can be seen
         And close the app
