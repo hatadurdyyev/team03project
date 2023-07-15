@@ -1,15 +1,16 @@
-package stepdefinitions;
+package stepdefinitions.US_09_StepDefs;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import pages.*;
 import utilities.Driver;
+import utilities.MediaUtils;
+import utilities.WaitUtils;
 
-import java.security.Key;
+import java.io.IOException;
 
 public class LessonsStepDefs {
 
@@ -30,13 +31,15 @@ public class LessonsStepDefs {
 
     @When("The user clicks Login button")
     public void theUserClicksLoginButton() {
-        loginPage.loginButton.click();//burayi degistir
+       homePage.loginHome.click();
+        WaitUtils.waitFor(2);
 
     }
 
     @Then("The user enter the vice dean’s username")
     public void theUserEnterTheViceDeanSUsername() {
         loginPage.userName.sendKeys("Project09Admin", Keys.ENTER);
+        WaitUtils.waitFor(2);
 
 
     }
@@ -44,18 +47,21 @@ public class LessonsStepDefs {
     @And("The user enter the vice dean’s password")
     public void theUserEnterTheViceDeanSPassword() {
         loginPage.password.sendKeys("12345678",Keys.ENTER);
+        WaitUtils.waitFor(2);
 
     }
 
     @And("The user click firstLogin button")
     public void theUserClickFirstLoginButton() {
         loginPage.loginButton.click();
+        WaitUtils.waitFor(2);
 
     }
 
     @And("The user click  on the menu button")
     public void theUserClickOnTheMenuButton() {
         deanMngPage.menuButton.click();
+        WaitUtils.waitFor(2);
 
 
     }
@@ -63,18 +69,21 @@ public class LessonsStepDefs {
     @And("The user  click Lesson Management on the main page")
     public void theUserClickLessonManagementOnTheMainPage() {
         menuPage.lessonManagementButton.click();
+        WaitUtils.waitFor(2);
 
     }
 
     @And("The user click Lessons")
     public void theUserClickLessons() {
         lessonMngPage.lessonButton.click();
+        WaitUtils.waitFor(2);
 
 
     }
 
     @Given("The user view Lesson Name,Compulsory and Credit Score")
-    public void theUserViewLessonNameCompulsoryAndCreditScore() {
+    public void theUserViewLessonNameCompulsoryAndCreditScore() throws IOException {
+        MediaUtils.takeScreenshotOfTheEntirePage();
 
 
 
@@ -82,6 +91,9 @@ public class LessonsStepDefs {
 
     @Given("The user click delete button")
     public void theUserClickDeleteButton() {
+        lessonMngPage.lessonDeletebutton.click();
+
+
 
 
 
@@ -90,9 +102,13 @@ public class LessonsStepDefs {
     @And("The user close the page")
     public void theUserCloseThePage() {
 
+        Driver.closeDriver();
+
     }
 
     @Given("The user click first lesson")
     public void theUserClickFirstLesson() {
+
+
     }
 }

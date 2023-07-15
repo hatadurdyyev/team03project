@@ -52,4 +52,7 @@ public class LessonMngPage {
     @FindBy(xpath = "(//button[text()='Submit'])[3]")
     public WebElement addLessonProgramSubmitButton;
 
+    @FindBy (xpath="//*[@class='btn btn-danger']")
+    public WebElement lessonDeletebutton;
+
 }
