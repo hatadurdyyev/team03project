@@ -86,9 +86,6 @@ public class UI_StepDefs {
         Assert.assertTrue(contactPage.subjectSection.isDisplayed());
         Assert.assertTrue(contactPage.messageSection.isDisplayed());
 
-
-
-
     }
 
 
