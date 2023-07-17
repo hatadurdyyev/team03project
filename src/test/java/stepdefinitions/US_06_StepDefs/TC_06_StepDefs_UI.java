@@ -58,12 +58,7 @@ public class TC_06_StepDefs_UI {
         MediaUtils.takeScreenshotOfTheEntirePage();
         Assert.assertTrue(verify.isDisplayed());
     }
-    @Then("close the application")
-    public void close_the_application() {
 
-        Driver.closeDriver();
-
-    }
     @Given("user enters all the credentials under given conditions but password")
     public void user_enters_all_the_credentials_under_given_conditions_but_password() throws IOException {
 
