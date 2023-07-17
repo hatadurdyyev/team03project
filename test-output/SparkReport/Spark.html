@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 17, 2023 11:07:16 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jul 17, 2023 11:53:38 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 17, 2023 11:07:16 PM</h3>
+<h3>Jul 17, 2023 11:53:38 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 17, 2023 11:08:29 PM</h3>
+<h3>Jul 17, 2023 11:54:00 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -123,7 +123,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>3</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>30</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>18</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Vice Deans should be able to view the lesson list and make updates":70.43
+"create_lesson_program":21.712
 };
 </script>
 <div class="row">
@@ -172,8 +172,8 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@US_09_UI</td>
-<td>3</td>
+<td>@US_10</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -207,13 +207,13 @@ failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 3,
+passChild: 1,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 30,
+passGrandChild: 18,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -238,7 +238,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@US_09_UI</a>
+<a class="dropdown-item" href="#">@US_10</a>
 </ul>
 </li>
 </ul>
@@ -249,9 +249,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Vice Deans should be able to view the lesson list and make updates</p>
+            <p class="name">create_lesson_program</p>
             <p class="text-sm">
-              <span>11:07:18 PM</span> / <span>00:01:10:430</span>
+              <span>11:53:38 PM</span> / <span>00:00:21:712</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -259,10 +259,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Vice Deans should be able to view the lesson list and make updates</h5>
-<span class='badge badge-success'>07.17.2023 11:07:18 PM</span>
-<span class='badge badge-danger'>07.17.2023 11:08:29 PM</span>
-<span class='badge badge-default'>00:01:10:430</span>
+<h5 class="test-status text-pass">create_lesson_program</h5>
+<span class='badge badge-success'>07.17.2023 11:53:38 PM</span>
+<span class='badge badge-danger'>07.17.2023 11:54:00 PM</span>
+<span class='badge badge-default'>00:00:21:712</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -274,180 +274,98 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC01_Vice Deans should be  able to view the lesson list ,compulsory and credit score created</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC01_create_a_lesson_schedule</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserGoTo(java.lang.String)">
-                <span>Given The user go to "https://managementonschools.com/"</span>
+              <div class="step pass-bg" title="stepdefinitions.CommonStepDefinitions.user_goes_to(java.lang.String)">
+                <span>Given user goes to "https://managementonschools.com/"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.CommonStepDefinitions.user_clicks_on_login_link()">
-                <span>When user clicks on login link</span>
+              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.clickOnLoginIcon()">
+                <span>When click on login icon</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserEnterTheViceDeanSUsername()">
-                <span>Then The user enter the vice dean’s username</span>
+              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.userEntersForUserName(java.lang.String)">
+                <span>And user enters "Ozlem1" for user name</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserEnterTheViceDeanSPassword()">
-                <span>And The user enter the vice dean’s password</span>
+              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.userEntersForPassword(java.lang.String)">
+                <span>And user enters "12345678" for password</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserClickFirstLoginButton()">
-                <span>And The user click firstLogin button</span>
+              <div class="step pass-bg" title="stepdefinitions.CommonStepDefinitions.user_clicks_on_login_button()">
+                <span>And user clicks on login button</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserClickOnTheMenuButton()">
-                <span>And The user click  on the menu button</span>
+              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.userClicksOnLessonProgram()">
+                <span>Given user clicks on Lesson Program</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserClickLessonManagementOnTheMainPage()">
-                <span>And The user  click Lesson Management on the main page</span>
+              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.userClicksOnSelectLessonDropdown()">
+                <span>When user clicks on select lesson dropdown</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserClickLessons()">
-                <span>And The user click Lessons</span>
+              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.user_selects_a_lesson()">
+                <span>And user selects a lesson</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserViewLessonNameCompulsoryAndCreditScore()">
-                <span>Given The user view Lesson Name,Compulsory and Credit Score</span>
+              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.user_clicks_on_select_choose_education_term_dropdown()">
+                <span>And user clicks on select Choose Education Term dropdown</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserCloseThePage()">
-                <span>And The user close the page</span>
+              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.user_select_a_semester()">
+                <span>And user select a semester</span>
       <div>
       </div>
               </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>TC02_Vice Deans should be  able to delete the lesson</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserGoTo(java.lang.String)">
-                <span>Given The user go to "https://managementonschools.com/"</span>
+              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.user_clicks_on_select_choose_day_dropdown()">
+                <span>And user clicks on select choose day dropdown</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.CommonStepDefinitions.user_clicks_on_login_link()">
-                <span>When user clicks on login link</span>
+              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.user_select_a_day()">
+                <span>And user select a day</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserEnterTheViceDeanSUsername()">
-                <span>Then The user enter the vice dean’s username</span>
+              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.user_clicks_on_select_start_time_dropdown()">
+                <span>And user clicks on select Start Time dropdown</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserEnterTheViceDeanSPassword()">
-                <span>And The user enter the vice dean’s password</span>
+              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.user_select_a_start_time()">
+                <span>And user select a start time</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserClickFirstLoginButton()">
-                <span>And The user click firstLogin button</span>
+              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.user_clicks_on_select_stop_time_dropdown()">
+                <span>And user clicks on select Stop Time dropdown</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserClickOnTheMenuButton()">
-                <span>And The user click  on the menu button</span>
+              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.user_select_a_stop_time()">
+                <span>And user select a stop time</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserClickLessonManagementOnTheMainPage()">
-                <span>And The user  click Lesson Management on the main page</span>
+              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.userClicksOnSubmitButton()">
+                <span>And user clicks on Submit button</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserClickLessons()">
-                <span>And The user click Lessons</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserClickDeleteButton()">
-                <span>Given The user click delete button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserCloseThePage()">
-                <span>And The user close the page</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="32"><span class="badge log pass-bg mr-2">Pass</span>TC03_Vice Dean should be able to update the lesson information</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserGoTo(java.lang.String)">
-                <span>Given The user go to "https://managementonschools.com/"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.CommonStepDefinitions.user_clicks_on_login_link()">
-                <span>When user clicks on login link</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserEnterTheViceDeanSUsername()">
-                <span>Then The user enter the vice dean’s username</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserEnterTheViceDeanSPassword()">
-                <span>And The user enter the vice dean’s password</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserClickFirstLoginButton()">
-                <span>And The user click firstLogin button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserClickOnTheMenuButton()">
-                <span>And The user click  on the menu button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserClickLessonManagementOnTheMainPage()">
-                <span>And The user  click Lesson Management on the main page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserClickLessons()">
-                <span>And The user click Lessons</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserClickFirstLesson()">
-                <span>Given The user click first lesson</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_09_StepDefs.US_09_UI_StepDefs.theUserCloseThePage()">
-                <span>And The user close the page</span>
+              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.userShouldSeeSuccessMessage()">
+                <span>And user should see Success Message</span>
       <div>
       </div>
               </div>
@@ -477,15 +395,15 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>3</span>
+<span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@US_09_UI</p>
-<p class="duration text-sm">3 tests</p>
+<p class="name">@US_10</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@US_09_UI</h4>
-<span status="pass" class='badge log pass-bg'>3 passed</span>
+<h4>@US_10</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -498,31 +416,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>23:07:18 PM</td>
+<td>23:53:38 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC01_Vice Deans should be able to view the lesson list ,compulsory and credit score created</a>
+<a href="#" class="linked" test-id='1' id='2'>TC01_create_a_lesson_schedule</a>
 <div class="">
-<span class="badge badge-default">Vice Deans should be able to view the lesson list and make updates.TC01_Vice Deans should be able to view the lesson list ,compulsory and credit score created</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>23:07:43 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='17'>TC02_Vice Deans should be able to delete the lesson</a>
-<div class="">
-<span class="badge badge-default">Vice Deans should be able to view the lesson list and make updates.TC02_Vice Deans should be able to delete the lesson</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>23:08:09 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='32'>TC03_Vice Dean should be able to update the lesson information</a>
-<div class="">
-<span class="badge badge-default">Vice Deans should be able to view the lesson list and make updates.TC03_Vice Dean should be able to update the lesson information</span>
+<span class="badge badge-default">create_lesson_program.TC01_create_a_lesson_schedule</span>
 </div>
 </td>
 </tr>

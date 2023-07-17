@@ -81,6 +81,25 @@ public class ViceDeanMngPage {
     @FindBy(xpath = "//div[text()='Lesson Created']")
     public WebElement alert;
 
+    @FindBy(xpath = "//*[@class=' css-b62m3t-container']")
+    public WebElement selectLesson;
+
+    @FindBy(xpath = "//*[@id='react-select-2-listbox']/div[1]")
+    public WebElement cypress2;
+
+    @FindBy(xpath = "(//*[@value='2'])[1]")
+    public  WebElement springSemester;
+
+    @FindBy(xpath = "(//*[@value='TUESDAY'])[1]")
+    public  WebElement tuesday;
+
+    @FindBy(css = "[class*='Toastify__toast-body'] div:nth-child(2)")
+    public WebElement successMessage;
+
+    @FindBy(xpath = "//div[text()='Lesson Created']")
+    public WebElement theFirstLessonCheckBoxButton;
+
+
 
 
 

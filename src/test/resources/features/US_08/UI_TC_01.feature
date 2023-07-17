@@ -2,7 +2,7 @@
 Feature: search_feature
 
   Background: user_goes_to_google
-    Given user navigates to "https://managementonschools.com/"
+    Given user goes to "https://managementonschools.com/"
     And user clicks on login link
     And user enters the vice deans "username" and "password"
     And user clicks on the menu button
