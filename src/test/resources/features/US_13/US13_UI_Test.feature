@@ -3,7 +3,7 @@ Feature: Vice Deans should be able to create a teacher
 
   Background: Vice_Dean_is_logging_in
     Given User goes to school page "https://managementonschools.com/"
-    When user clicks Login button
+    And user clicks on login link
     And user enters VD username "US13VD" to the username text box
     And user enters VD password "12345678" to the password text box
     And user clicks on login button

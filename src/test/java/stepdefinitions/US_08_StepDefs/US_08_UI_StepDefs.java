@@ -7,7 +7,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.LoginPage;
 import pages.ViceDeanMngPage;
-import utilities.Driver;
 import utilities.MediaUtils;
 import utilities.WaitUtils;
 
@@ -17,7 +16,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static utilities.Driver.getDriver;
 
-public class UI_StepDefs {
+public class US_08_UI_StepDefs {
     ViceDeanMngPage viceDeanMngPage = new ViceDeanMngPage();
     LoginPage loginPage = new LoginPage();
 
@@ -25,11 +24,6 @@ public class UI_StepDefs {
     public void user_navigates_to(String string) {
         getDriver().get("https://managementonschools.com/");
         WaitUtils.waitFor(1);
-    }
-
-    @And("user clicks on login button")
-    public void userClicksOnLoginButton() {
-        viceDeanMngPage.loginButton.click();
     }
 
     @Given("user enters the vice deans {string} and {string}")
@@ -87,8 +81,8 @@ public class UI_StepDefs {
         viceDeanMngPage.AddLessonSubmitButton.click();
         WaitUtils.waitFor(1);
     }
-    @Then("assert the alert")
-    public void assertTheAlert()  throws InterruptedException {
+    @Then("validate lesson created alert")
+    public void validate_lesson_created_alert()  throws InterruptedException {
         String alertText = viceDeanMngPage.alert.getText();
         assertTrue(alertText.contains("Lesson Created"));
         WaitUtils.waitFor(3);

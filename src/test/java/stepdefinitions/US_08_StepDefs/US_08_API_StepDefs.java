@@ -7,7 +7,7 @@ import static base_urls.ManagementonSchoolBaseUrl.*;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
-public class API_StepDefs {
+public class US_08_API_StepDefs {
 
     Response response;
 

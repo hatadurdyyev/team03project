@@ -18,16 +18,11 @@ import static junit.framework.TestCase.assertTrue;
 
 public class US_13_UI_StepDefs {
     ViceDeanTeacherMngPage viceDeanTeacherMngPage = new ViceDeanTeacherMngPage();
-    HomePage homePage = new HomePage();
     LoginPage loginPage = new LoginPage();
     ViceDeanMngPage viceDeanMngPage = new ViceDeanMngPage();
     @Given("User goes to school page {string}")
     public void user_goes_to_school_page(String url) {
         Driver.getDriver().get(url);
-    }
-    @When("user clicks Login button")
-    public void user_clicks_login_button() {
-        homePage.loginHome.click();
     }
 
     @And("user enters VD username {string} to the username text box")
@@ -42,11 +37,6 @@ public class US_13_UI_StepDefs {
 
         loginPage.password.sendKeys(password);
 
-    }
-
-    @When("user clicks on login button")
-    public void user_clicks_on_login_button() {
-        loginPage.loginButton.click();
     }
 
     @And("user clicks on submit button")

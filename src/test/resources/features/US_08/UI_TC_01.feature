@@ -1,9 +1,9 @@
-@Vice_Dean_Add_Lesson
+@ui_test @Vice_Dean_Add_Lesson
 Feature: search_feature
 
   Background: user_goes_to_google
     Given user navigates to "https://managementonschools.com/"
-    And user clicks on login button
+    And user clicks on login link
     And user enters the vice deans "username" and "password"
     And user clicks on the menu button
     And user  selects Lesson Management on the main page
@@ -13,7 +13,7 @@ Feature: search_feature
     And user enters the lessonName and creditScore
     And user marks whether the course is compulsory or not
     When user clicks the Submit button
-    Then assert the alert
+    Then validate lesson created alert
     Then close the application
 
 Scenario: TC02_using_invalid_characters_in_lessonAddition

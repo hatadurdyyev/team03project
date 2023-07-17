@@ -1,4 +1,4 @@
-@all_ui
+@ui_test @all_ui
 Feature: Deans should be able to create a Vice Dean account.
 
 

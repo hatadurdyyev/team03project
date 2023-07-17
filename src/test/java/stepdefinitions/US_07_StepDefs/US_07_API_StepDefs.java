@@ -7,7 +7,7 @@ import io.restassured.response.Response;
 import static base_urls.ManagementonSchoolBaseUrl.*;
 import static io.restassured.RestAssured.given;
 
-public class API_StepDefs {
+public class US_07_API_StepDefs {
 
     Response response;
 

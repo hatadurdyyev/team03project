@@ -12,8 +12,8 @@ public class US_13_API_StepDefs {
 
     Response response;
 
-    @Given("send get request by {string}")
-    public void send_get_request_by(String string) {
+    @Given("send get request by username {string}")
+    public void send_get_request_by_username (String string) {
 
         //set the url https://managementonschools.com/app/teachers/getAll
         response = given()

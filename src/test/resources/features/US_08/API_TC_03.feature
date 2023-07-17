@@ -1,5 +1,5 @@
 
-@Check_created_new_lessons_API_TC_03
+@api_test @Check_created_new_lessons_API_TC_03
   Feature:Check_lesson
 
     Scenario Outline: US8_Get_created_lesson_by_lesson_name
