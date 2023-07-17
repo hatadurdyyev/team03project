@@ -1,4 +1,4 @@
-@US02 @US_02_TC02
+@api_test @US02 @US_02_TC02
 Feature: US_02_TC02_API Admin should be able to see the Guest User List
 
   Background: Admin should be able to get guest user list and delete a guest user

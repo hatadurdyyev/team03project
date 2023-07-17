@@ -28,16 +28,7 @@ public class US_02_TC01_UI_StepDefs {
         homePage.loginHome.click();
         MediaUtils.takeScreenshotOfTheEntirePage();
     }
-    @When("admin enters username {string}")
-    public void admin_enters_username(String username) throws IOException {
-        loginPage.userName.sendKeys(username);
-        MediaUtils.takeScreenshotOfTheEntirePage();
-    }
-    @When("admin enters password {string}")
-    public void admin_enters_password(String password) throws IOException {
-        loginPage.password.sendKeys(password);
-        MediaUtils.takeScreenshotOfTheEntirePage();
-    }
+
     @When("admin clicks on login button")
     public void admin_clicks_on_login_button() throws IOException {
         loginPage.loginButton.click();
@@ -47,15 +38,17 @@ public class US_02_TC01_UI_StepDefs {
     public void admin_clicks_on_menu_button() throws IOException {
         adminMngPage.menuButton.click();
         MediaUtils.takeScreenshotOfTheEntirePage();
+        WaitUtils.waitFor(2);
     }
     @Given("admin clicks guest user link")
     public void admin_clicks_guest_user_link() throws IOException {
         menuPage.guestUserButton.click();
         MediaUtils.takeScreenshotOfTheEntirePage();
+        WaitUtils.waitFor(2);
     }
     @Given("admin validates guest user list text on the page")
     public void admin_validates_guest_user_list_text_on_the_page() throws IOException {
-        WaitUtils.waitFor(1);
+        WaitUtils.waitFor(2);
         assertTrue(guestUserPage.guestUserListTxt.isDisplayed());
         MediaUtils.takeScreenshotOfTheEntirePage();
     }

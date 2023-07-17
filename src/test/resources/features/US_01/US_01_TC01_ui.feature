@@ -1,4 +1,4 @@
-@e2e @ui_test @us_01 @us_01_ui_test
+@e2e  @us_01 @us_01_ui_test
   Feature: Prospective students should be able to register in the system.
 
     Scenario: Register as student

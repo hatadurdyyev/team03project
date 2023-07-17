@@ -47,7 +47,20 @@ public class ContactPage {
     public WebElement firstMessageMessageSection;
 
 
-
+    @FindBy(id = "name")
+    public WebElement yourname;
+    @FindBy(id ="email")
+    public WebElement email;
+    @FindBy(id = "subject")
+    public WebElement subject;
+    @FindBy(id ="message")
+    public WebElement message;
+    @FindBy(xpath = "(//button[@type ='button'])[3]")
+    public WebElement safeMessage;
+    @FindBy(xpath = "//div[text()='Please enter valid email']")
+    public WebElement emailErrorAlert;
+    @FindBy(xpath = "//div[@role='alert']")
+    public WebElement alert;
 
 
 

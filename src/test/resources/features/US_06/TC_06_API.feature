@@ -1,4 +1,4 @@
-@all_api
+@api_test @all_api
 Feature: Deans should be able to create a Vice Dean account.
 
 
