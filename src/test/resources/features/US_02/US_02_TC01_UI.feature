@@ -4,8 +4,7 @@ Feature: US_02_TC01_UI Admin should be able to see the Guest User List
   Background: Sign in as an admin
     Given admin goes to "https://managementonschools.com/"
     When admin clicks on login link
-    And admin enters username "Project09Admin"
-    And admin enters password "12345678"
+    And admin enters username "Project09Admin" and password "12345678"
     And admin clicks on login button
 
 

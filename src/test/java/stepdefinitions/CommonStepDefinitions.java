@@ -1,11 +1,15 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.HomePage;
 import pages.LoginPage;
 import utilities.Driver;
+import utilities.MediaUtils;
+
+import java.io.IOException;
 
 public class CommonStepDefinitions {
 
@@ -27,10 +31,20 @@ public class CommonStepDefinitions {
         loginPage.loginButton.click();
     }
 
+    // ADMIN CREDENTIALS
+    @And("admin enters username {string} and password {string}")
+    public void adminEntersUsernameAndPassword(String username, String password) throws IOException {
+        loginPage.userName.sendKeys(username);
+        loginPage.password.sendKeys(password);
+        MediaUtils.takeScreenshotOfTheEntirePage();
+    }
+
     @Then("close the application")
     public void close_the_application() {
 
         Driver.closeDriver();
 
     }
+
+
 }

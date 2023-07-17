@@ -28,16 +28,7 @@ public class US_02_TC01_UI_StepDefs {
         homePage.loginHome.click();
         MediaUtils.takeScreenshotOfTheEntirePage();
     }
-    @When("admin enters username {string}")
-    public void admin_enters_username(String username) throws IOException {
-        loginPage.userName.sendKeys(username);
-        MediaUtils.takeScreenshotOfTheEntirePage();
-    }
-    @When("admin enters password {string}")
-    public void admin_enters_password(String password) throws IOException {
-        loginPage.password.sendKeys(password);
-        MediaUtils.takeScreenshotOfTheEntirePage();
-    }
+
     @When("admin clicks on login button")
     public void admin_clicks_on_login_button() throws IOException {
         loginPage.loginButton.click();
