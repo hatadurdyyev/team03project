@@ -18,13 +18,6 @@ import static utilities.Driver.getDriver;
 
 public class US_08_UI_StepDefs {
     ViceDeanMngPage viceDeanMngPage = new ViceDeanMngPage();
-    LoginPage loginPage = new LoginPage();
-
-    @Given("user navigates to {string}")
-    public void user_navigates_to(String string) {
-        getDriver().get("https://managementonschools.com/");
-        WaitUtils.waitFor(1);
-    }
 
     @Given("user enters the vice deans {string} and {string}")
     public void user_enters_the_vice_deans_username_and_password(String username, String password) throws IOException {
