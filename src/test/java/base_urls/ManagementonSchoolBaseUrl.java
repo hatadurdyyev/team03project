@@ -11,6 +11,7 @@ public class ManagementonSchoolBaseUrl {
 
 //    public static RequestSpecification spec;
     public static RequestSpecification spec;
+    public static RequestSpecification spec2;
 
     //This method will run before each @Test methods.
 //    public void setUp() {
@@ -28,6 +29,14 @@ public class ManagementonSchoolBaseUrl {
         spec = new RequestSpecBuilder()
                 .addHeader("Authorization", generateToken3())
                 .setBaseUri("https://managementonschools.com/app").build();
+    }
+
+    public static void setSpec2(){
+
+
+        spec2 = new RequestSpecBuilder().setBaseUri("https://managementonschools.com/app").build();
+
+
     }
 
 

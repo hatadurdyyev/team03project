@@ -17,6 +17,7 @@ public class DeanMngPage {
 
     @FindBy(xpath = "//a[text()='Contact Get All']")
     public WebElement contactGetAllButton;
+
     @FindBy(id = "name")
     public WebElement addDeanNameTextBox;
     @FindBy(id = "surname")
@@ -39,6 +40,72 @@ public class DeanMngPage {
     public WebElement addDeanPasswordTextBox;
     @FindBy(xpath = "//button[text()='Submit']")
     public WebElement addDeanSubmitButton;
+
+    @FindBy(xpath = "//*[@href='/login']")
+    public WebElement loginIconForDnMng;
+
+    @FindBy(xpath = "//input[@id='username']")
+    public WebElement loginAdminUsernameForDnMng;
+
+    @FindBy(xpath = "//input[@id='password']")
+    public WebElement loginAdminPasswordForDnMng;
+
+    @FindBy(xpath = "//button[@class='fw-semibold btn btn-primary' and @type='button']")
+    public WebElement loginButtonForDnMng;
+
+    @FindBy(xpath = "//a[.='Dean Management']")
+    public WebElement deanMngOptionButton;
+
+    @FindBy(xpath = "//table//tr[7]//td[6]")
+    public WebElement deanFromList;
+
+    @FindBy(xpath = "//table//tr[11]//td[6]")
+    public WebElement secondDeanFromList;
+
+    @FindBy(xpath = "(//input[@id='name'])[2]")
+    public WebElement newNameInputEditPage;
+
+    @FindBy(xpath = "(//input[@id='surname'])[2]")
+    public WebElement newSurnameInputEditPage;
+
+    @FindBy(xpath = "(//input[@id='birthPlace'])[2]")
+    public WebElement newBirthPlaceInput;
+
+    @FindBy(xpath = "(//input[@value='FEMALE'])[2]")
+    public WebElement genderFemaleRadioButton;
+
+    @FindBy(xpath = "(//input[@value='MALE'])[2]")
+    public WebElement genderMaleRadioButton;
+
+    @FindBy(xpath = "(//input[@id='birthDay'])[2]")
+    public WebElement newDateOfBirthInput;
+
+    @FindBy(xpath = "(//input[@id='phoneNumber'])[2]")
+    public WebElement newPhoneNumberInput;
+
+    @FindBy(xpath = "(//input[@id='ssn'])[2]")
+    public WebElement newSsnNumberInput;
+
+    @FindBy(xpath = "(//input[@id='username'])[2]")
+    public WebElement newUsernameInputEditPage;
+
+    @FindBy(xpath = "(//input[@id='password'])[2]")
+    public WebElement newPasswordInputEditPage;
+
+    @FindBy(xpath = "(//button[.='Submit'])[2]")
+    public WebElement editPageSubmitButton;
+
+    @FindBy(xpath = "//div[text()='Dean updated Successful']")
+    public WebElement deanUpdtScssMessage;
+
+    @FindBy(xpath = "(//button[@aria-label='Close'])[3]")
+    public WebElement crossSignInEditPage;
+
+    @FindBy(xpath = "//h3[text()='Dean Management']")
+    public WebElement deanManagementTitleText;
+
+    @FindBy(xpath = "//h5[text()='Dean List']")
+    public WebElement deanListTitleText;
 
 
 

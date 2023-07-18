@@ -15,6 +15,11 @@ public class MenuPage {
     @FindBy(partialLinkText = "Login")
     public WebElement homeLoginLink;
      */
+    @FindBy(xpath = "//a[@href='/register']")
+    public WebElement registerLink;
+
+    @FindBy(xpath = "//a[@href='/login']")
+    public WebElement loginLink;
 
     @FindBy(xpath = "//a[text()='Admin Management']")
     public WebElement adminManagementButton;
