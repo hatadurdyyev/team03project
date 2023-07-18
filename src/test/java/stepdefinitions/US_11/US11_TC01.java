@@ -12,10 +12,6 @@ import utilities.Driver;
 
 public class US11_TC01 {
 
-   /* HomePage managementSchoolsMainPage = new HomePage();
-    LoginPage managementSchoolsLoginPage = new LoginPage();
-
-    */
 
     @Test
     public void viceDeanTest() throws InterruptedException {
