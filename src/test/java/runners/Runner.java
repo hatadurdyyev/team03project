@@ -20,7 +20,7 @@ import org.junit.runner.RunWith;
         glue = {"stepdefinitions/US_03_StepDefs","hooks"}, //PATH OF STEPDEFINITIONS FOLDER
         dryRun = false , //dryRun = true : RUNS AND GENERATES ONLY MISSING STEP DEFS.
         // dryRun = false: RUN NORMAL. THIS IS DEFAULT VALUE
-        tags = "@Api"
+        tags = "@e2e"
 
 )
 public class Runner {
