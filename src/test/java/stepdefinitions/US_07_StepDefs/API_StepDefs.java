@@ -17,7 +17,7 @@ public class API_StepDefs {
 
         //Set the url
 
-        spec2.pathParams("first","contactMessages","second","getAll");
+        spec.pathParams("first","contactMessages","second","getAll");
 
         //Set the expected data
 
@@ -25,7 +25,7 @@ public class API_StepDefs {
         //Send the request and get the response
         //response = given(spec3).header("Authorization","Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJQcm9qZWN0MDlBZG1pbiIsImlhdCI6MTY4ODkxODM2NiwiZXhwIjoxNjg4OTI3MDA2fQ.Rjms2shGzVtP398eNidQp1BohASqxcGO5OfzP_XnjduDcRUlrzuHOr_n-v0ZifkmqrfYNPrsuycjdvKS4gtOUA").get("/{first}/{second}");
 
-        response = given(spec2).get("/{first}/{second}");
+        response = given(spec).get("/{first}/{second}");
 
         response.prettyPrint();
 
