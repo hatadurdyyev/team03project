@@ -1,5 +1,5 @@
-
-Feature: Add admin
+@us_22 @e2e @ui_test
+Feature: US_22 Add admin
 
   Background: User is logged in as an admin
     Given User goes to school page "https://managementonschools.com/"
@@ -45,7 +45,6 @@ Feature: Add admin
     When user clicks on submit button
     Then verify phone number required message
 
-  @US_22
   Scenario: TC_07 SSN must be entered and must contain a "-" after the 3rd and 5th digits and must consist of 9 digits in total and cannot be left blank.
     Given user clicks on admin SSN field
     When user clicks on submit button
