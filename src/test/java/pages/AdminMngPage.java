@@ -55,6 +55,27 @@ public class AdminMngPage {
     @FindBy(xpath = "//button[text()='Submit']")
     public WebElement addAdminSubmitButton;
 
+    @FindBy(xpath = "//*[@id = 'name']/following-sibling::div[@class='invalid-feedback']")
+    public WebElement adminNameRequiredMessage;
+    @FindBy(xpath = "//*[@id = 'surname']/following-sibling::div[@class='invalid-feedback']")
+    public WebElement adminSurnameRequiredMessage;
+    @FindBy(xpath = "//*[@id = 'birthPlace']/following-sibling::div[@class='invalid-feedback']")
+    public WebElement adminBirthplaceRequiredMessage;
+    @FindBy(xpath = "//*[@id = 'phoneNumber']/following-sibling::div[@class='invalid-feedback']")
+    public WebElement adminPhoneNumberRequiredMessage;
+    @FindBy(xpath = "//*[@id = 'birthDay']/following-sibling::div[@class='invalid-feedback']")
+    public WebElement adminBirthdateRequiredMessage;
+    @FindBy(xpath = "//*[@id = 'ssn']/following-sibling::div[@class='invalid-feedback']")
+    public WebElement adminSsnRequiredMessage;
+    @FindBy(xpath = "//*[@id = 'username']/following-sibling::div[@class='invalid-feedback']")
+    public WebElement adminUsernameRequiredMessage;
+    @FindBy(xpath = "//*[@id = 'password']/following-sibling::div[@class='invalid-feedback']")
+    public WebElement adminPasswordRequiredMessage;
+    @FindBy(xpath = "(//div[.=\"Admin Saved\"])[5]")
+    public WebElement adminSavedMessage;
+    @FindBy(xpath = "(//div[.='Please enter valid SSN number'])[5]")
+    public WebElement enterValidSSNMessage;
+
 
 
 
