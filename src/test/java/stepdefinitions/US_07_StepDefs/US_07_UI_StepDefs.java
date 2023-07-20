@@ -33,14 +33,14 @@ public class US_07_UI_StepDefs {
     @When("user enters {string} to the username text box")
     public void user_enters_to_the_username_text_box(String string) throws IOException {
 
-        managementSchoolsLoginPage.userName.sendKeys("miles");
+        managementSchoolsLoginPage.userName.sendKeys(string);
         MediaUtils.takeScreenshotOfTheEntirePage();
 
     }
     @When("user enters {string} to the password text box")
     public void user_enters_to_the_password_text_box(String string) throws IOException {
 
-        managementSchoolsLoginPage.password.sendKeys("milesmiles");
+        managementSchoolsLoginPage.password.sendKeys(string);
         MediaUtils.takeScreenshotOfTheEntirePage();
 
     }
