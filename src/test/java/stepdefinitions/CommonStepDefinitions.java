@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.HomePage;
 import pages.LoginPage;
+import pages.MenuPage;
 import utilities.Driver;
 import utilities.MediaUtils;
 
@@ -15,7 +16,7 @@ public class CommonStepDefinitions {
 
     HomePage homePage = new HomePage();
     LoginPage loginPage = new LoginPage();
-
+    MenuPage menuPage=new MenuPage();
     @Given("user goes to {string}")
     public void user_goes_to(String url) {
         Driver.getDriver().get(url);
@@ -38,6 +39,11 @@ public class CommonStepDefinitions {
         loginPage.password.sendKeys(password);
         MediaUtils.takeScreenshotOfTheEntirePage();
     }
+    @Then("logouts page")
+    public void logoutsPage() {
+        menuPage.logoutButton.click();
+    }
+
 
     @Then("close the application")
     public void close_the_application() {

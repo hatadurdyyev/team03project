@@ -10,8 +10,7 @@
 
       Examples:
         | lessonName | compulsory | creditScore |
-        |abc3        |true        | 230         |
-
+        |   Cypress    |true        |10       |
 
 
 

@@ -3,7 +3,7 @@ package base_urls;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
-import org.junit.Before;
+
 
 import static utilities.Authentication.*;
 
@@ -32,13 +32,16 @@ public class ManagementonSchoolBaseUrl {
 
     public static void setSpec2(){
 
-
         spec2 = new RequestSpecBuilder().setBaseUri("https://managementonschools.com/app").build();
 
-
     }
-
-
-
-
 }
+
+
+
+
+
+
+
+
+

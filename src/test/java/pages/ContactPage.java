@@ -15,6 +15,8 @@ public class ContactPage {
     @FindBy(partialLinkText = "Login")
     public WebElement homeLoginLink;
      */
+    @FindBy(xpath = "//h5[@bg='primary']")
+    public WebElement contactMessage;
 
     @FindBy(xpath = "//th[text()='Name']")
     public WebElement nameSection;

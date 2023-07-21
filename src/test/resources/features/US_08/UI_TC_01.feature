@@ -1,4 +1,4 @@
-@ui_test @Vice_Dean_Add_Lesson
+@us_8_ui_test @Vice_Dean_Add_Lesson
 Feature: search_feature
 
   Background: user_goes_to_google

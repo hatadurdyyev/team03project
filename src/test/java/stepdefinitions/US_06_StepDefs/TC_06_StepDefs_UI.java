@@ -100,4 +100,6 @@ public class TC_06_StepDefs_UI {
         MediaUtils.takeScreenshotOfTheEntirePage();
         Assert.assertFalse(verify.isDisplayed());
     }
+
+
 }

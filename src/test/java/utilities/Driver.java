@@ -1,6 +1,10 @@
 package utilities;
 
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -16,6 +20,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 import java.util.NoSuchElementException;
+
+import static base_urls.ManagementonSchoolBaseUrl.spec2;
+import static io.restassured.RestAssured.given;
+import static org.junit.Assert.assertEquals;
+
 public class Driver {
     //create a driver instance
     private static WebDriver driver;
@@ -278,4 +287,6 @@ public class Driver {
     public static void waitAndClickLocationText(WebElement element, String value) {
         Driver.getDriver().findElement(By.xpath("//*[text()='" + value + "']")).click();
     }
-}
+
+
+    }
