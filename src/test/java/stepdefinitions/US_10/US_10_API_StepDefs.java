@@ -2,12 +2,14 @@ package stepdefinitions.US_10;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 import static base_urls.ManagementonSchoolBaseUrl.spec2;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
+import static utilities.Authentication.generateToken3;
 
 public class US_10_API_StepDefs {
     Response response;
@@ -15,6 +17,7 @@ public class US_10_API_StepDefs {
     public void bodyShouldContainsLesson_nameStart_timeStop_timeDay(String lesson_name, String start_time, String stop_time, String day) {
 
         // https://managementonschools.com/app/lessonPrograms/getAllUnassigned
+
         spec2.pathParams("first", "lessonPrograms", "second", "getAllUnassigned");
         response = given(spec2).get("{first}/{second}");
 

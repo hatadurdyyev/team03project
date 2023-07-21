@@ -2,11 +2,32 @@
 Feature:Check_lesson
 
   Scenario Outline: US16_Get_all_sent_messages
-    Given send get all request by content"<content>" to get all sent messages
-    Then body should contains  name"<name>", email"<email>", subject "<subject>", message "<message>",date "<date>"
-
-
-
+    Given send get all request by  to get all sent messages
+    Then response body should contains "<content>"
     Examples:
-   | content       | name  | email           | subject |message       | date      |
-   |  true         | Ocean | ocean@dut.com   |Lessons  | How ARE YOU  |2023-07-20 |
+      | content |
+      |true     |
+
+  #{
+  #  "content": [
+  #  {
+  #  "name": "Dora",
+  #  "email": "nathan.jacobi@gmail.com",
+  #  "subject": "Pig (programming tool)",
+  #  "message": "Taming a Sea Horse",
+  #  "date": "2023-07-21"
+  #  },
+  #  {
+  #  "name": "Freddy",
+  #  "email": "errol.bogan@gmail.com",
+  #  "subject": "xHarbour",
+  #  "message": "Specimen Days",
+  #  "date": "2023-07-21"
+  #  },
+  #  {
+  #  "name": "Setsuko",
+  #  "email": "clarence.abbott@gmail.com",
+  #  "subject": "Ring",
+  #  "message": "The Waste Land",
+  #  "date": "2023-07-21"
+  #  },

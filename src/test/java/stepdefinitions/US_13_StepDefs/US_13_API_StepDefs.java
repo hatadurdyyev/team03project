@@ -1,11 +1,13 @@
 package stepdefinitions.US_13_StepDefs;
 
 import io.cucumber.java.en.*;
+import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import static base_urls.ManagementonSchoolBaseUrl.spec2;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
+import static utilities.Authentication.generateToken3;
 
 
 public class US_13_API_StepDefs {
@@ -16,6 +18,7 @@ public class US_13_API_StepDefs {
     public void send_get_request_by_username (String string) {
 
         //set the url https://managementonschools.com/app/teachers/getAll
+
         response = given()
                 .spec(spec2)
                 .get("/teachers/getAll");

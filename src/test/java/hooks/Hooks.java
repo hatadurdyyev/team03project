@@ -21,7 +21,9 @@ public class Hooks {
     }
 
     @Before
-    public void setUp(){setSpec();}
+    public void setUp(){
+        setSpec();
+    }
 
     @After
     public void tearDown(Scenario scenario){
