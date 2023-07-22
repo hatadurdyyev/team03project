@@ -20,12 +20,11 @@ public class HomePage {
 
     @FindBy(xpath = "(//a[@role = 'button'])[5]")
     public WebElement linkContact;
-<<<<<<< HEAD
 
 
 
-=======
->>>>>>> main
+
+
 
 
 

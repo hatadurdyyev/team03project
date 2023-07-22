@@ -6,11 +6,11 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 
-<<<<<<< HEAD
+
 import static base_urls.ManagementonSchoolBaseUrl.setSpec;
-=======
+
 import static base_urls.ManagementonSchoolBaseUrl.*;
->>>>>>> main
+
 
 public class Hooks {
     /*
@@ -18,15 +18,15 @@ public class Hooks {
    */
     @Before()
     public void setUpScenario(){
-<<<<<<< HEAD
+
         //  RUNS BEFORE EACH SCENARIO
         System.out.println("BEFORE METHODS");
         setSpec();
-=======
+
       //  RUNS BEFORE EACH SCENARIO
        System.out.println("BEFORE METHODS");
        setSpec();
->>>>>>> main
+
 
     }
 

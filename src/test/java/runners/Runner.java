@@ -15,16 +15,11 @@ import org.junit.runner.RunWith;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         monochrome = true,
-        features = "./src/test/resources/features/US_03" +
-                "",//PATH OF FEATURES FOLDER
-        glue = {"stepdefinitions/US_03_StepDefs","hooks"}, //PATH OF STEPDEFINITIONS FOLDER
-        dryRun = false , //dryRun = true : RUNS AND GENERATES ONLY MISSING STEP DEFS.
-        // dryRun = false: RUN NORMAL. THIS IS DEFAULT VALUE
-        tags = "@e2e"
 
-
-
-
+        tags = "@US15_DB",
+        glue = {"stepdefinitions","hooks"},
+        features = "src/test/resources",
+        dryRun = false
 
 )
 public class Runner {

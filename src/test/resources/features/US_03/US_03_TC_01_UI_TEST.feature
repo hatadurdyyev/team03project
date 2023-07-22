@@ -12,11 +12,11 @@ Feature: US_03_TC_1User_Can_Send_Message
     And user enter subject "<Subject>"
     And user enter message "<Message>"
     And user click on save message
-<<<<<<< HEAD
+
     Then assert the alert
-=======
+
     Then validate contact message created successfully alert
->>>>>>> main
+
 
     And close application
     Examples:
