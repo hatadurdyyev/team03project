@@ -5,7 +5,11 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Before;
 
-import static utilities.Authentication.*;
+
+
+import static utilities.Authentication.generateToken3;
+
+
 
 public class ManagementonSchoolBaseUrl {
 
@@ -18,10 +22,15 @@ public class ManagementonSchoolBaseUrl {
         spec = new RequestSpecBuilder()
                 .setContentType(ContentType.JSON)
                 .setBaseUri("https://managementonschools.com/")
-                .addHeader("Authorization",""+generateToken())
+                .addHeader("Authorization",""+generateToken3())
                 .build();
-
     }
+
+    //public static void setSpec(){
+        //spec2 = new RequestSpecBuilder()
+                //.addHeader("Authorization", generateToken3())
+                //.setBaseUri("https://managementonschools.com/app").build();
+   // }
 
 
     public static void setSpec(){
@@ -42,3 +51,5 @@ public class ManagementonSchoolBaseUrl {
 
 
 }
+
+
