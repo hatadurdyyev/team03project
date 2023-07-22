@@ -241,4 +241,29 @@ public class ReusableMethods {
         }
     }
 
+    //    RADIO BUTTON
+    public static void clickRadioByIndex(int index){
+        int numOfRadio =Driver.getDriver().findElements(By.xpath("//input[@type='radio']")).size();
+        for (int i=0;i<numOfRadio;i++){
+            if (!Driver.getDriver().findElements(By.xpath("//input[@type='radio']")).get(index).isSelected()) {
+                Driver.getDriver().findElements(By.xpath("//input[@type='radio']")).get(index).click();
+            }
+        }
+    }
+
+
+    //    CHECKBOX BUTTON
+    public static void clickCheckboxByIndex(int index){
+        int numOfRadio =Driver.getDriver().findElements(By.xpath("//input[@type='checkbox']")).size();
+        try{
+            for (int i=0;i<numOfRadio;i++){
+                if (!Driver.getDriver().findElements(By.xpath("//input[@type='checkbox']")).get(index).isSelected()) {
+                    Driver.getDriver().findElements(By.xpath("//input[@type='checkbox']")).get(index).click();
+                }
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
 }

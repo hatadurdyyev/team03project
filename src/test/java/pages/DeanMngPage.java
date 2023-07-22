@@ -84,6 +84,35 @@ public class DeanMngPage {
     @FindBy(xpath = "//h5[text()='Dean List']")
     public WebElement deanListTitleText;
 
+    // For add Dean section
+    @FindBy(id = "name")
+    public WebElement addName;
 
+    @FindBy(id = "surname")
+    public WebElement addSurname;
+
+    @FindBy(id = "birthPlace")
+    public WebElement addBirthPlace;
+
+    @FindBy(id = "birthDay")
+    public WebElement addBirthDay;
+
+    @FindBy(id = "phoneNumber")
+    public WebElement addPhoneNumber;
+
+    @FindBy(id = "ssn")
+    public WebElement addSSN;
+
+    @FindBy(id = "username")
+    public WebElement addUsername;
+
+    @FindBy(id = "password")
+    public WebElement addPassword;
+
+    @FindBy(xpath = "//button[.='Submit']")
+    public WebElement submitBtn;
+
+    @FindBy(xpath = "//div[.='Dean Saved']")
+    public WebElement deanSavedMessage;
 
 }
