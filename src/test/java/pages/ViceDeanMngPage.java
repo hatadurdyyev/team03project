@@ -11,23 +11,41 @@ public class ViceDeanMngPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    /*  -- sample --
-    @FindBy(partialLinkText = "Login")
-    public WebElement homeLoginLink;
-     */
+
+    @FindBy(xpath = " //a[@href='/login']")
+    public WebElement loginButton;
+
+    @FindBy(xpath = "//input[@type='text']")
+    public WebElement viceDeanUserName;
+
+    @FindBy(xpath = "//input[@type='password']")
+    public WebElement viceDeanPassWord;
+
+    @FindBy(xpath = " //button[.='Login']")
+    public WebElement loginSubmitButton;
+
     @FindBy(xpath = "//button[.='Menu']")
     public WebElement menuButton;
+
     @FindBy(xpath = "//a[.='Lesson Management']")
     public WebElement lessonManagementLink;
+
     @FindBy(xpath = "//a[.='Teacher Management']")
     public WebElement teacherManagementLink;
+
+    @FindBy(xpath = "//button[.='Lessons']")
+    public WebElement lessonsButton;
+
     @FindBy(xpath = "//a[.='Student Management']")
     public WebElement studentManagementLink;
+
     @FindBy(xpath = "//a[.='Contact Get All']")
     public WebElement contactGetAllLink;
     @FindBy(xpath = "//a[.='Logout']")
+
     public WebElement logOutLink;
     @FindBy(id = "controlled-tab-example-tab-educationTerm")
+
     public WebElement educationTerm;
     @FindBy(id = "controlled-tab-example-tab-lessonsList")
     public WebElement lessonsList;
@@ -59,6 +77,28 @@ public class ViceDeanMngPage {
     public WebElement chooseTeacher;
     @FindBy(xpath = "(//button[.='Submit'])[4]")
     public WebElement teacherAssignmentSubmitButton;
+
+    @FindBy(xpath = "//div[text()='Lesson Created']")
+    public WebElement alert;
+
+    @FindBy(xpath = "//*[@class=' css-b62m3t-container']")
+    public WebElement selectLesson;
+
+    @FindBy(xpath = "//*[@id='react-select-2-listbox']/div[1]")
+    public WebElement cypress2;
+
+    @FindBy(xpath = "(//*[@value='2'])[1]")
+    public  WebElement springSemester;
+
+    @FindBy(xpath = "(//*[@value='TUESDAY'])[1]")
+    public  WebElement tuesday;
+
+    @FindBy(css = "[class*='Toastify__toast-body'] div:nth-child(2)")
+    public WebElement successMessage;
+
+    @FindBy(xpath = "//div[text()='Lesson Created']")
+    public WebElement theFirstLessonCheckBoxButton;
+
 
 
 

@@ -15,7 +15,7 @@ import utilities.WaitUtils;
 
 import java.io.IOException;
 
-public class UI_StepDefs {
+public class US_07_UI_StepDefs {
 
     HomePage managementSchoolsMainPage = new HomePage();
     LoginPage managementSchoolsLoginPage = new LoginPage();
@@ -23,13 +23,6 @@ public class UI_StepDefs {
     ContactPage contactPage = new ContactPage();
 
 
-    @Given("user goes to {string}")
-    public void user_goes_to(String url) throws IOException {
-
-        Driver.getDriver().get(url);
-        MediaUtils.takeScreenshotOfTheEntirePage();
-
-    }
     @When("user clicks on Login button")
     public void user_clicks_on_login_button() throws IOException {
 
@@ -85,9 +78,6 @@ public class UI_StepDefs {
         Assert.assertTrue(contactPage.dateSection.isDisplayed());
         Assert.assertTrue(contactPage.subjectSection.isDisplayed());
         Assert.assertTrue(contactPage.messageSection.isDisplayed());
-
-
-
 
     }
 
