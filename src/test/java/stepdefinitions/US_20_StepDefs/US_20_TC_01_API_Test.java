@@ -13,7 +13,6 @@ import static io.restassured.RestAssured.given;
 public class US_20_TC_01_API_Test {
 
     Response response;
-    Response response2;
 
 
     @Given("send the request")
@@ -23,7 +22,7 @@ public class US_20_TC_01_API_Test {
 
         response = given(spec).get("/{first}/{second}");
 
-       response.prettyPrint();
+        response.prettyPrint();
 
     }
     @When("verify the response")
@@ -31,6 +30,7 @@ public class US_20_TC_01_API_Test {
 
 
         response.then().statusCode(200);
+
 
     }
 
