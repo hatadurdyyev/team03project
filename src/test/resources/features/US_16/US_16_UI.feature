@@ -1,5 +1,5 @@
 @us_16_ui_test @Vice_Dean_deletes_messages
-Feature: search_feature
+Feature:The Vice Dean should be able to view the messages sent by user
 
   Background: user_goes_to_google
     Given user goes to "https://managementonschools.com/"

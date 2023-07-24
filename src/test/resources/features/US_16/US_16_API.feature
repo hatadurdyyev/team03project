@@ -1,5 +1,5 @@
 @Check_sent_all_messages_API_TC_01
-Feature:Check_lesson
+Feature:The Vice Dean should be able to view the messages sent by user
 
   Scenario Outline: US16_Get_all_sent_messages
     Given send get all request by  to get all sent messages
