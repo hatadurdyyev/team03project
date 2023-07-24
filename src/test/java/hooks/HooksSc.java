@@ -1,4 +1,4 @@
-package hooks;
+/*package hooks;
 
 import io.cucumber.java.Before;
 
@@ -11,3 +11,5 @@ public class HooksSc {
         setSpec2();
     }
 }
+
+ */

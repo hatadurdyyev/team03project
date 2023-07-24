@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         },
         monochrome = true,
 
-        tags = "@US15_DB",
+        tags = "@US15_Api",
         glue = {"stepdefinitions","hooks"},
         features = "src/test/resources",
         dryRun = false
