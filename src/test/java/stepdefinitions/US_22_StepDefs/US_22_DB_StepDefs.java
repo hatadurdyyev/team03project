@@ -1,6 +1,7 @@
 package stepdefinitions.US_22_StepDefs;
 
 import io.cucumber.java.en.*;
+import org.junit.Assert;
 
 import java.sql.*;
 
@@ -25,17 +26,26 @@ public class US_22_DB_StepDefs {
         connection = DriverManager.getConnection("jdbc:postgresql://managementonschools.com:5432/school_management","select_user","43w5ijfso");
     }
     @Then("verify admin db if body contains birth_day {string} , birth_place {string} , gender {string} , name {string} , phone_number {string} , ssn {string} , surname {string} , username {string}")
-    public void verify_admin_db_if_body_contains_birth_day_birth_place_gender_name_phone_number_ssn_surname_username(String string, String string2, String string3, String string4, String string5, String string6, String string7, String string8) throws SQLException {
+    public void verify_admin_db_if_body_contains_birth_day_birth_place_gender_name_phone_number_ssn_surname_username(String birthDay, String birthPlace, String gender, String name, String phoneNumber, String ssn, String surname, String username) throws SQLException {
         resultSet.next();//To move the pointer to the next record from header, use next() method
 
-        String actBirth_day = resultSet.getString("birth_day");
-        String actBirth_place = resultSet.getString("birth_place");
+        String actBirthDay = resultSet.getString("birth_day");
+        String actBirthPlace = resultSet.getString("birth_place");
         String actGender = resultSet.getString("gender");
         String actName = resultSet.getString("name");
-        String actPhone_number = resultSet.getString("phone_number");
+        String actPhoneNumber = resultSet.getString("phone_number");
         String actSsn = resultSet.getString("ssn");
         String actSurname = resultSet.getString("surname");
         String actUsername = resultSet.getString("username");
+
+        Assert.assertEquals(birthDay,actBirthDay);
+        Assert.assertEquals(birthPlace, actBirthPlace);
+        Assert.assertEquals(gender,actGender);
+        Assert.assertEquals(name,actName);
+        Assert.assertEquals(phoneNumber,actPhoneNumber);
+        Assert.assertEquals(ssn,actSsn);
+        Assert.assertEquals(surname, actSurname);
+        Assert.assertEquals(username, actUsername);
 
     }
 
