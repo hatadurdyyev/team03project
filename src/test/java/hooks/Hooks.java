@@ -12,16 +12,18 @@ public class Hooks {
     /*
     HOOKS : is used to run BEFORE or AFTER each SCENARIO or SCENARIO OUTLINE
      */
-    @Before("@Api")
+    @Before("@API")
     public void setUpScenario(){
-        //  RUNS BEFORE EACH SCENARIO
-        System.out.println("BEFORE METHODS");
-        setSpec();
+
+      //  RUNS BEFORE EACH SCENARIO
+       System.out.println("BEFORE METHODS");
+       setSpec();
 
     }
 
     @Before
-    public void setUp(){setSpec();}
+    public void setUp(){
+        setSpec();}
 
     @After
     public void tearDown(Scenario scenario){

@@ -28,6 +28,12 @@ public class ManagementonSchoolBaseUrl {
                 .addHeader("Authorization", generateToken3())
                 .setBaseUri("https://managementonschools.com/app").build();
     }
+
+    public static void setSpec2(){
+
+        spec2 = new RequestSpecBuilder().setBaseUri("https://managementonschools.com/app").build();
+    }
+
 }
 
 

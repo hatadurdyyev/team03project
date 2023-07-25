@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 13, 2023 10:11:44 pm</span></a>
+<a href="#"><span class="badge badge-primary">Jul 25, 2023 11:06:21 pm</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 13, 2023 10:11:44 pm</h3>
+<h3>Jul 25, 2023 11:06:21 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 13, 2023 10:11:49 pm</h3>
+<h3>Jul 25, 2023 11:06:27 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>2</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>3</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Vice Dean should be able to see created lesson information(Api)":4.537
+"US_18 update student grade":4.376
 };
 </script>
 <div class="row">
@@ -172,7 +172,23 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@us10_Api</td>
+<td>@db_test</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@e2e</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@us_18_db</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -191,7 +207,7 @@ var timeline = {
 <tbody>
 <tr>
 <td>os</td>
-<td>Windows</td>
+<td>Mac</td>
 </tr>
 </tbody>
 </table></div>
@@ -213,7 +229,7 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 2,
+passGrandChild: 3,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -238,7 +254,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@us10_Api</a>
+<a class="dropdown-item" href="#">@db_test</a><a class="dropdown-item" href="#">@e2e</a><a class="dropdown-item" href="#">@us_18_db</a>
 </ul>
 </li>
 </ul>
@@ -249,9 +265,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Vice Dean should be able to see created lesson information(Api)</p>
+            <p class="name">US_18 update student grade</p>
             <p class="text-sm">
-              <span>22:11:45</span> / <span>00:00:04:537</span>
+              <span>23:06:23</span> / <span>00:00:04:376</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -259,10 +275,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Vice Dean should be able to see created lesson information(Api)</h5>
-<span class='badge badge-success'>07.13.2023 22:11:45</span>
-<span class='badge badge-danger'>07.13.2023 22:11:49</span>
-<span class='badge badge-default'>00:00:04:537</span>
+<h5 class="test-status text-pass">US_18 update student grade</h5>
+<span class='badge badge-success'>07.25.2023 23:06:23</span>
+<span class='badge badge-danger'>07.25.2023 23:06:27</span>
+<span class='badge badge-default'>00:00:04:376</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -274,24 +290,29 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>US10_Get_created_lesson_by_lesson_name</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Read updated student grade data</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>US10_Get_created_lesson_by_lesson_name</div>
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Read updated student grade data</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
-                    <span>Given send get request by lesson_name "Phyton" to get the lesson schedule</span>
+                    <span>Given user connects to the application database for teacher account</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Then body should contains lesson_name "Phyton" , start_time "09:09:00", stop_time "17:17:00", day "TUESDAY"</span>
+                    <span>And user gets students data via "896"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify teacher db if body after update contains midtermExam "100" , finalExam "90"</span>
       <div>
       </div>
                   </div>
@@ -315,7 +336,7 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -324,12 +345,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@us10_Api</p>
+<p class="name">@db_test</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@us10_Api</h4>
+<h4>@db_test</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -343,11 +364,83 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:11:45 pm</td>
+<td>23:06:23 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>US10_Get_created_lesson_by_lesson_name</a>
+<a href="#" class="linked" test-id='1' id='3'>Read updated student grade data</a>
 <div class="">
-<span class="badge badge-default">Vice Dean should be able to see created lesson information(Api).US10_Get_created_lesson_by_lesson_name</span>
+<span class="badge badge-default">US_18 update student grade.Read updated student grade data</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@e2e</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@e2e</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:06:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Read updated student grade data</a>
+<div class="">
+<span class="badge badge-default">US_18 update student grade.Read updated student grade data</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@us_18_db</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@us_18_db</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:06:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Read updated student grade data</a>
+<div class="">
+<span class="badge badge-default">US_18 update student grade.Read updated student grade data</span>
 </div>
 </td>
 </tr>

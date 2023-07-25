@@ -15,15 +15,17 @@ public class LoginPage {
     @FindBy(partialLinkText = "Login")
     public WebElement homeLoginLink;
      */
+
     @FindBy(xpath = "//*[@class='header_link ms-2']")
     public WebElement loginIcon;
+
     @FindBy(id="username")
     public WebElement userName;
-@FindBy(id="password")
+
+    @FindBy(id="password")
     public WebElement password;
-@FindBy(xpath = "//*[@id=\"root\"]/div/main/div/div[1]/div/form/div[3]/button")
+
+    @FindBy(xpath = "//button[.='Login']")
     public WebElement loginButton;
-
-
 
 }

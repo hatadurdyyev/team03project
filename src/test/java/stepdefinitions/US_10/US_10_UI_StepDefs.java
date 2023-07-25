@@ -1,45 +1,38 @@
-package stepdefinitions;
+package stepdefinitions.US_10;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import pages.HomePage;
 import pages.LoginPage;
 import pages.ViceDeanMngPage;
 import utilities.*;
 
 import java.io.IOException;
+public class US_10_UI_StepDefs {
 
-public class US_10_step_def {
     ViceDeanMngPage viceDeanMngPage =new ViceDeanMngPage();
+    HomePage homePage = new HomePage();
     LoginPage loginPage = new LoginPage();
 
-    @Given("user navigates to {string}")
-    public void userNavigatesTo(String arg0) throws IOException {
-        Driver.getDriver().get(arg0);
-        MediaUtils.takeScreenshotOfTheEntirePage();
-    }
 
     @When("click on login icon")
     public void clickOnLoginIcon() {
-        loginPage.loginIcon.click();
+        homePage.loginHome.click();
     }
 
     @And("user enters {string} for user name")
-    public void userEntersForUserName(String arg0) {
-        loginPage.userName.sendKeys(arg0);
+    public void userEntersForUserName(String username) {
+        loginPage.userName.sendKeys(username);
     }
 
     @And("user enters {string} for password")
-    public void userEntersForPassword(String arg0) {
-        loginPage.password.sendKeys(arg0);
+    public void userEntersForPassword(String password) {
+        loginPage.password.sendKeys(password);
     }
 
-    @And("user clicks on login button")
-    public void userClicksOnLoginButton() {
-        loginPage.loginButton.click();
-    }
 
     @Given("user clicks on Lesson Program")
     public void userClicksOnLessonProgram() {
@@ -52,8 +45,8 @@ public class US_10_step_def {
 
         viceDeanMngPage.selectLesson.click();
         WaitUtils.waitFor(3);
-    //    viceDeanMngPage.cypress.sendKeys(Keys.TAB);
-     //   WaitUtils.waitFor(3);
+        //    viceDeanMngPage.cypress.sendKeys(Keys.TAB);
+        //   WaitUtils.waitFor(3);
     }
     @When("user selects a lesson")
     public void user_selects_a_lesson() {

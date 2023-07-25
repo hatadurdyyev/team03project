@@ -1,25 +1,16 @@
-package stepdefinitions;
-import base_urls.ManagementonSchoolBaseUrl;
+package stepdefinitions.US_10;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 
 import static base_urls.ManagementonSchoolBaseUrl.spec2;
 import static io.restassured.RestAssured.given;
-import static io.restassured.RestAssured.requestSpecification;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
 
-public class US_10_API_Stepdef {
+public class US_10_API_StepDefs {
     Response response;
-
-    @Given("send get request by lesson_name {string} to get the lesson schedule")
-    public void sendGetRequestByLesson_nameToGetTheLessonSchedule(String lesson_name) {
-    }
     @Then("body should contains lesson_name {string} , start_time {string}, stop_time {string}, day {string}")
     public void bodyShouldContainsLesson_nameStart_timeStop_timeDay(String lesson_name, String start_time, String stop_time, String day) {
 
