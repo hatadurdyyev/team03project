@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 18, 2023 12:12:56 AM</span></a>
+<a href="#"><span class="badge badge-primary">Jul 26, 2023 01:32:33 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 18, 2023 12:12:56 AM</h3>
+<h3>Jul 26, 2023 01:32:33 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 18, 2023 12:13:17 AM</h3>
+<h3>Jul 26, 2023 01:32:39 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>19</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>2</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"create_lesson_program":20.875
+"The teacher should be able to give grades to the students.":4.694
 };
 </script>
 <div class="row">
@@ -172,7 +172,31 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@US_10</td>
+<td>@e2e</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@db_test</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@us_17_tc_01_db_test</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@us_17</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -213,7 +237,7 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 19,
+passGrandChild: 2,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -238,7 +262,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@US_10</a>
+<a class="dropdown-item" href="#">@e2e</a><a class="dropdown-item" href="#">@db_test</a><a class="dropdown-item" href="#">@us_17_tc_01_db_test</a><a class="dropdown-item" href="#">@us_17</a>
 </ul>
 </li>
 </ul>
@@ -249,9 +273,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">create_lesson_program</p>
+            <p class="name">The teacher should be able to give grades to the students.</p>
             <p class="text-sm">
-              <span>12:12:56 AM</span> / <span>00:00:20:875</span>
+              <span>1:32:34 PM</span> / <span>00:00:04:694</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -259,10 +283,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">create_lesson_program</h5>
-<span class='badge badge-success'>07.18.2023 12:12:56 AM</span>
-<span class='badge badge-danger'>07.18.2023 12:13:17 AM</span>
-<span class='badge badge-default'>00:00:20:875</span>
+<h5 class="test-status text-pass">The teacher should be able to give grades to the students.</h5>
+<span class='badge badge-success'>07.26.2023 1:32:34 PM</span>
+<span class='badge badge-danger'>07.26.2023 1:32:39 PM</span>
+<span class='badge badge-default'>00:00:04:694</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -274,103 +298,18 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC01_create_a_lesson_schedule</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>US_17_TC_DB</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.CommonStepDefinitions.user_goes_to(java.lang.String)">
-                <span>Given user goes to "https://managementonschools.com/"</span>
+              <div class="step pass-bg" title="stepdefinitions.US_17_StepDefs.US_17_DB_StepDefs.send_to_the_database_request()">
+                <span>Given send to the database request</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.clickOnLoginIcon()">
-                <span>When click on login icon</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.userEntersForUserName(java.lang.String)">
-                <span>And user enters "Ozlem1" for user name</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.userEntersForPassword(java.lang.String)">
-                <span>And user enters "12345678" for password</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.CommonStepDefinitions.user_clicks_on_login_button()">
-                <span>And user clicks on login button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.userClicksOnLessonProgram()">
-                <span>Given user clicks on Lesson Program</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.userClicksOnSelectLessonDropdown()">
-                <span>When user clicks on select lesson dropdown</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.user_selects_a_lesson()">
-                <span>And user selects a lesson</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.user_clicks_on_select_choose_education_term_dropdown()">
-                <span>And user clicks on select Choose Education Term dropdown</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.user_select_a_semester()">
-                <span>And user select a semester</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.user_clicks_on_select_choose_day_dropdown()">
-                <span>And user clicks on select choose day dropdown</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.user_select_a_day()">
-                <span>And user select a day</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.user_clicks_on_select_start_time_dropdown()">
-                <span>And user clicks on select Start Time dropdown</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.user_select_a_start_time()">
-                <span>And user select a start time</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.user_clicks_on_select_stop_time_dropdown()">
-                <span>And user clicks on select Stop Time dropdown</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.user_select_a_stop_time()">
-                <span>And user select a stop time</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.userClicksOnSubmitButton()">
-                <span>And user clicks on Submit button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US_10.US_10_UI_StepDefs.userShouldSeeSuccessMessage()">
-                <span>And user should see Success Message</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.CommonStepDefinitions.close_the_application()">
-                <span>Then close the application</span>
+              <div class="step pass-bg" title="stepdefinitions.US_17_StepDefs.US_17_DB_StepDefs.verify_the_database_body()">
+                <span>Then verify the database body</span>
       <div>
       </div>
               </div>
@@ -393,7 +332,7 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -402,12 +341,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@US_10</p>
+<p class="name">@e2e</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@US_10</h4>
+<h4>@e2e</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -421,11 +360,119 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:12:56 AM</td>
+<td>13:32:34 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC01_create_a_lesson_schedule</a>
+<a href="#" class="linked" test-id='1' id='2'>US_17_TC_DB</a>
 <div class="">
-<span class="badge badge-default">create_lesson_program.TC01_create_a_lesson_schedule</span>
+<span class="badge badge-default">The teacher should be able to give grades to the students..US_17_TC_DB</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@db_test</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@db_test</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:32:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>US_17_TC_DB</a>
+<div class="">
+<span class="badge badge-default">The teacher should be able to give grades to the students..US_17_TC_DB</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@us_17_tc_01_db_test</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@us_17_tc_01_db_test</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:32:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>US_17_TC_DB</a>
+<div class="">
+<span class="badge badge-default">The teacher should be able to give grades to the students..US_17_TC_DB</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@us_17</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@us_17</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:32:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>US_17_TC_DB</a>
+<div class="">
+<span class="badge badge-default">The teacher should be able to give grades to the students..US_17_TC_DB</span>
 </div>
 </td>
 </tr>
