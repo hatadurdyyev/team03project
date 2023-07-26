@@ -1,11 +1,13 @@
-package stepdefinitions.US_09_StepDefs;
+package stepdefinitions.US_09and23_StepDefs;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.ui.Wait;
 import pages.*;
+import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.MediaUtils;
 import utilities.WaitUtils;
@@ -20,6 +22,10 @@ public class LessonsStepDefs {
     DeanMngPage deanMngPage=new DeanMngPage();
 
     LessonMngPage lessonMngPage=new LessonMngPage();
+
+    ViceDeanMngPage viceDeanMngPage=new ViceDeanMngPage();
+
+    ViceDeanManSc viceDeanManSc=new ViceDeanManSc();
 
 
     @Given("The user go to {string}")
@@ -111,4 +117,93 @@ public class LessonsStepDefs {
 
 
     }
+
+    @And("The user click ViceDeanManagement button")
+    public void theUserClickViceDeanManagementButton() {
+
+       menuPage.viceDeanManagementButton.click();
+
+
+
+
+
+
+    }
+
+    @And("The admin enter valid name")
+    public void theAdminEnterValidName() {
+
+        viceDeanManSc.vDeanName.sendKeys(ConfigReader.getProperty("name"));
+        WaitUtils.waitFor(4);
+
+
+
+    }
+
+    @And("The admin enter surname")
+    public void theAdminEnterSurname() {
+        viceDeanManSc.vDeanSurname.sendKeys(ConfigReader.getProperty("surname"));
+        WaitUtils.waitFor(4);
+    }
+
+    @And("The admin enter Birth Place")
+    public void theAdminEnterBirthPlace() {
+
+        viceDeanManSc.vDeanBirthPlace.sendKeys(ConfigReader.getProperty("birth_place"));
+        WaitUtils.waitFor(4);
+
+    }
+
+    @And("The admin click gender")
+    public void theAdminClickGender() {
+        viceDeanManSc.vDeanGender.click();
+        WaitUtils.waitFor(4);
+
+
+    }
+
+    @Then("The admin enter  date of birth")
+    public void theAdminEnterDateOfBirth() {
+        viceDeanManSc.vDeanBirthDay.sendKeys(ConfigReader.getProperty("birth_date"));
+        WaitUtils.waitFor(4);
+
+    }
+
+    @And("admin enter phone number")
+    public void adminEnterPhoneNumber() {
+        viceDeanManSc.vDeanPhoneNumber.sendKeys(ConfigReader.getProperty("phone"));
+        WaitUtils.waitFor(4);
+    }
+
+    @And("admin enter ssn")
+    public void adminEnterSsn() {
+        viceDeanManSc.vDeanSsn.sendKeys(ConfigReader.getProperty("ssn"));
+        WaitUtils.waitFor(4);
+
+    }
+
+    @And("admin enter user name")
+    public void adminEnterUserName() {
+        viceDeanManSc.vDeanUsername.sendKeys(ConfigReader.getProperty("username"));
+        WaitUtils.waitFor(4);
+
+    }
+
+    @And("admin enter password")
+    public void adminEnterPassword() throws IOException {
+        viceDeanManSc.vDeanPassword.sendKeys(ConfigReader.getProperty("password"));
+        WaitUtils.waitFor(4);
+        MediaUtils.takeScreenshotOfTheEntirePage();
+
+
+    }
+
+    @And("Admin click submit buton")
+    public void adminClickSubmitButon() throws IOException {
+        viceDeanManSc.vDeanSubmit.click();
+        MediaUtils.takeScreenshotOfTheEntirePage();
+    }
 }
+
+
+
