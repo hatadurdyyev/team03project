@@ -12,6 +12,9 @@ public class DeanMngPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
+    @FindBy(xpath = "//a[text()='Contact Get All']")
+    public WebElement contactGetAllButton;
+
     @FindBy(xpath = "//*[@href='/login']")
     public WebElement loginIconForDnMng;
 
@@ -24,7 +27,7 @@ public class DeanMngPage {
     @FindBy(xpath = "//button[@class='fw-semibold btn btn-primary' and @type='button']")
     public WebElement loginButtonForDnMng;
 
-    @FindBy(xpath = "//button[.='Menu']")
+    @FindBy(xpath = "//button[text()='Menu']")
     public WebElement menuButton;
 
     @FindBy(xpath = "//a[.='Dean Management']")
@@ -41,6 +44,7 @@ public class DeanMngPage {
 
     @FindBy(xpath = "(//input[@id='surname'])[2]")
     public WebElement newSurnameInputEditPage;
+
 
     @FindBy(xpath = "(//input[@id='birthPlace'])[2]")
     public WebElement newBirthPlaceInput;
@@ -74,11 +78,5 @@ public class DeanMngPage {
 
     @FindBy(xpath = "(//button[@aria-label='Close'])[3]")
     public WebElement crossSignInEditPage;
-
-    @FindBy(xpath = "//h3[text()='Dean Management']")
-    public WebElement deanManagementTitleText;
-
-    @FindBy(xpath = "//h5[text()='Dean List']")
-    public WebElement deanListTitleText;
 
 }

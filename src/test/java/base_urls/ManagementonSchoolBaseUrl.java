@@ -9,18 +9,20 @@ import static utilities.Authentication.*;
 
 public class ManagementonSchoolBaseUrl {
 
-    public static RequestSpecification spec;
+//    public static RequestSpecification spec;
     public static RequestSpecification spec2;
 
-    //This method will run before each @Test methods.
-    public void setUp() {
-
-        spec = new RequestSpecBuilder()
-                .setContentType(ContentType.JSON)
-                .setBaseUri("https://managementonschools.com/")
-                .addHeader("Authorization",""+generateToken3())
-                .build();
-    }
+//    This method will run before each @Test methods.
+//    public void setUp() {
+//
+//        spec = new RequestSpecBuilder()
+//                .setContentType(ContentType.JSON)
+//                .setBaseUri("https://managementonschools.com/")
+//                .addHeader("Authorization",""+generateToken())
+//                .build();
+//
+//    }
+//
 
     public static void setSpec(){
         spec2 = new RequestSpecBuilder()
