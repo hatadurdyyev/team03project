@@ -48,7 +48,8 @@ public class MenuPage {
     @FindBy(xpath = "(//button[@aria-label='Close'])[2]")
     public WebElement closeButton;
 
-
+    @FindBy(xpath = "(//button[@class='btn-close'])[2]")
+    public WebElement mainMenuCloseBtn;
 
 
 

@@ -13,7 +13,7 @@ public class ManagementonSchoolBaseUrl {
     public static RequestSpecification spec2;
 
     //This method will run before each @Test methods.
-    public void setUp() {
+    public static void setUp() {
 
         spec = new RequestSpecBuilder()
                 .setContentType(ContentType.JSON)
