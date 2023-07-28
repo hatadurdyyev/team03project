@@ -1,39 +1,40 @@
-package stepdefinitions.US_05_StepDefs;
+package stepdefinitions.US_09and23_StepDefs;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 
 import static base_urls.ManagementonSchoolBaseUrl.spec2;
 import static io.restassured.RestAssured.given;
-import static io.restassured.RestAssured.requestSpecification;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
-public class US05_APIStepDefs {
-    Response response;
-    @Given("send get request by {string} to get the dean")
-    public void send_get_request_by_to_get_the_dean(String username) {
+public class US23ApiStepDefs {
+  Response response;
 
-//        https://managementonschools.com/app/dean/geatAll
-        spec2.pathParams("first", "dean", "second", "getAll");
-//
-//        //Set the expected data
-//        //it is already exist in my api feature file
-//
-//        //Send the request and get the response
+    @Given("send  get request by username")
+    public void send_get_request_by_username() {
+
+
+        //        https://managementonschools.com/app/vicedean/geatAll
+
+        spec2.pathParams("first","vicedean","second","getAll");
+
+        //set the expected data
+        //its already exist in my api feature
+
+        //Send the request and get the response
         response = given(spec2).get("{first}/{second}");
         response.prettyPrint();
-    }
 
-    @Then("body should contains username {string} , name {string}, surname {string}, birth_place {string}, birth_day {string}, phone_number {string}, ssn {string},gender {string}")
+
+    }
+    @Then("body should  contains username {string} , name {string}, surname {string}, birth_place {string}, birth_day {string}, phone_number {string}, ssn {string},gender {string}")
     public void body_should_contains_username_name_surname_birth_place_birth_day_phone_number_ssn_gender(String username, String name, String surname, String birth_place, String birth_day, String phone_number, String ssn, String gender) {
 
         JsonPath jsonPath = response.jsonPath();
 
- //System.out.println(jsonPath.getList("content.findAll{it.username=='Jeremy001'}.surname").get(0));
+        //System.out.println(jsonPath.getList("content.findAll{it.username=='Jeremy001'}.surname").get(0));
 //        System.out.println(jsonPath.getList("findAll{it.username=='Jeremy001'}.surname"));
 //        System.out.println(jsonPath.getList("findAll{it.username=='"+username+"'}.username"));
 //        System.out.println(jsonPath.getList("findAll{it.username=='"+username+"'}.username").get(0));
@@ -60,17 +61,7 @@ public class US05_APIStepDefs {
         assertEquals(ssn,actSsn);
         assertEquals(gender,actGender);
     }
-}
 
-//         my expected data:
-//       {
-//         "userId": 13,
-//         "username": "Jeremy001",
-//         "name": "Jeremy",
-//         "surname": "Doe",
-//         "birthDay": "1998-09-13",
-//         "ssn": "182-32-4621",
-//         "birthPlace": "London",
-//         "phoneNumber": "198-182-3914",
-//         "gender": "FEMALE"
-//      }
+    }
+
+
