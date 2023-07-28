@@ -30,13 +30,6 @@ public class ManagementonSchoolBaseUrl {
                 .setBaseUri("https://managementonschools.com/app").build();
     }
 
-    public static void setSpec2(){
-
-
-        spec2 = new RequestSpecBuilder().setBaseUri("https://managementonschools.com/app").build();
-
-
-    }
 
 
 
