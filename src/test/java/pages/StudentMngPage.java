@@ -51,7 +51,7 @@ public class StudentMngPage {
     @FindBy(xpath = "//button[.='Submit']")
     public WebElement addSubmitBtn;
 
-    @FindBy(id = "70")     //@FindBy(xpath = "(//div[.='Student saved Successfully'])[5]")
+    @FindBy(xpath = "(//div[.='Student saved Successfully'])[5]")
     public WebElement studentSavedSuccessfullyMessage;
 
 

@@ -51,12 +51,12 @@ public class US_02_TC02_API_StepDefs {
     @Given("https:\\/\\/managementonschools.com\\/app")
     public void https_managementonschools_com_app() {
         setSpec();
-        //https://managementonschools.com/app/guestUser/getAll?page=0&size=1000&sort=name&type=desc
-        spec2.pathParams("first","guestUser","second", "getAll").
-                queryParams("page","0", "size", "1000", "sort", "name", "type", "desc");
     }
     @When("Admin send a GET request to the URL")
     public void admin_send_a_get_request_to_the_url() {
+        //https://managementonschools.com/app/guestUser/getAll?page=0&size=1000&sort=name&type=desc
+        spec2.pathParams("first","guestUser","second", "getAll").
+                queryParams("page","0", "size", "1000", "sort", "name", "type", "desc");
         responseGet = given(spec2).get("{first}/{second}");
     }
     @Then("HTTP Status Code should be {string}")
