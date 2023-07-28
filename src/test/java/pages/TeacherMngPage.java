@@ -44,6 +44,4 @@ public class TeacherMngPage {
     @FindBy(xpath = "//div[text()='Error: start time must not be greater than or equal to stop time']")
     public WebElement startStopTimeErrorAlert;
 
-
-
 }

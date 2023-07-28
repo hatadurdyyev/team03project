@@ -20,6 +20,7 @@ public class US05_DBStepDefs {
         Statement statement= connection.createStatement();
 
         String sqlQuery ="select * from dean where username ='"+username+"'";
+
         resultSet= statement.executeQuery(sqlQuery);
 
     }
