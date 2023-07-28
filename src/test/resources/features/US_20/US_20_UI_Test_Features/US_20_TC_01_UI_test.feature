@@ -18,3 +18,4 @@
       And user clicks on "Submit" button
       And verify the meeting is changed
 
+S
