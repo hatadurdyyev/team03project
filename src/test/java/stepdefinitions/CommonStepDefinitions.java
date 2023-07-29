@@ -39,6 +39,11 @@ public class CommonStepDefinitions {
         MediaUtils.takeScreenshotOfTheEntirePage();
     }
 
+    @Then("logouts page")
+    public void logoutsPage() {
+        menuPage.logoutButton.click();
+    }
+
     @Then("close the application")
     public void close_the_application() {
 
