@@ -15,6 +15,7 @@ public class CommonStepDefinitions {
 
     HomePage homePage = new HomePage();
     LoginPage loginPage = new LoginPage();
+    MenuPage menuPage = new MenuPage();
 
     @Given("user goes to {string}")
     public void user_goes_to(String url) {
