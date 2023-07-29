@@ -8,6 +8,7 @@ import pages.HomePage;
 import pages.LoginPage;
 import utilities.Driver;
 import utilities.MediaUtils;
+import pages.MenuPage;
 
 import java.io.IOException;
 
