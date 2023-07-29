@@ -7,7 +7,7 @@ import io.restassured.response.Response;
 import java.util.HashMap;
 import java.util.Map;
 
-import static base_urls.ManagementonSchoolBaseUrl.spec;
+import static base_urls.ManagementonSchoolBaseUrl.spec2;
 import static io.restassured.RestAssured.given;
 
 public class US_20_TC_01_API_Test {
@@ -18,9 +18,9 @@ public class US_20_TC_01_API_Test {
     @Given("send the request")
     public void send_the_request() {
 
-        spec.pathParams("first","meet","second","getAll");
+        spec2.pathParams("first","meet","second","getAll");
 
-        response = given(spec).get("/{first}/{second}");
+        response = given(spec2).get("/{first}/{second}");
 
         response.prettyPrint();
 
