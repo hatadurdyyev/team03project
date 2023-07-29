@@ -16,7 +16,7 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Map;
 
-import static base_urls.ManagementonSchoolBaseUrl.spec;
+import static base_urls.ManagementonSchoolBaseUrl.spec2;
 import static com.jayway.jsonpath.JsonPath.read;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.*;
@@ -37,7 +37,7 @@ public class US_20_TC_01__2_API_Test {
 
 //        JsonPath jsonPath = response.jsonPath();
 
-        spec.pathParams("first","meet","second","update","third","65");
+        spec2.pathParams("first","meet","second","update","third","65");
 
         Map<String, Object> payloadData = new HashMap<>();
         payloadData.put("date", date);
@@ -46,7 +46,7 @@ public class US_20_TC_01__2_API_Test {
         payloadData.put("stopTime", stopTime);
         payloadData.put("studentIds", studentIds);
 
-        response = given(spec).contentType(ContentType.JSON).body(payloadData).put("/{first}/{second}/{third}");
+        response = given(spec2).contentType(ContentType.JSON).body(payloadData).put("/{first}/{second}/{third}");
 
         response.prettyPrint();
 
