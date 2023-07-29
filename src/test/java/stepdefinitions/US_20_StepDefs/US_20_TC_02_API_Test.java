@@ -3,7 +3,7 @@ package stepdefinitions.US_20_StepDefs;
 import io.cucumber.java.en.*;
 import io.restassured.response.Response;
 
-import static base_urls.ManagementonSchoolBaseUrl.spec;
+import static base_urls.ManagementonSchoolBaseUrl.spec2;
 import static io.restassured.RestAssured.given;
 
 public class US_20_TC_02_API_Test {
@@ -13,9 +13,9 @@ public class US_20_TC_02_API_Test {
     @Given("Send the request and get the response")
     public void send_the_request_and_get_the_response() {
 
-        spec.pathParams("first","meet","second","getAll");
+        spec2.pathParams("first","meet","second","getAll");
 
-        response = given(spec).get("/{first}/{second}");
+        response = given(spec2).get("/{first}/{second}");
 
     }
     @Then("assert the meeting are deleted")
