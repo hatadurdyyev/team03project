@@ -13,7 +13,7 @@ public class ManagementonSchoolBaseUrl {
     public static RequestSpecification spec2;
 
     //This method will run before each @Test methods.
-    public void setUp() {
+    public static void setUp() {
 
         spec = new RequestSpecBuilder()
                 .setContentType(ContentType.JSON)
@@ -30,13 +30,6 @@ public class ManagementonSchoolBaseUrl {
                 .setBaseUri("https://managementonschools.com/app").build();
     }
 
-    public static void setSpec2(){
-
-
-        spec2 = new RequestSpecBuilder().setBaseUri("https://managementonschools.com/app").build();
-
-
-    }
 
 
 

@@ -8,6 +8,7 @@ import pages.HomePage;
 import pages.LoginPage;
 import utilities.Driver;
 import utilities.MediaUtils;
+import pages.MenuPage;
 
 import java.io.IOException;
 
@@ -15,6 +16,7 @@ public class CommonStepDefinitions {
 
     HomePage homePage = new HomePage();
     LoginPage loginPage = new LoginPage();
+    MenuPage menuPage = new MenuPage();
 
     @Given("user goes to {string}")
     public void user_goes_to(String url) {
@@ -37,6 +39,11 @@ public class CommonStepDefinitions {
         loginPage.userName.sendKeys(username);
         loginPage.password.sendKeys(password);
         MediaUtils.takeScreenshotOfTheEntirePage();
+    }
+
+    @Then("logouts page")
+    public void logoutsPage() {
+        menuPage.logoutButton.click();
     }
 
     @Then("close the application")
