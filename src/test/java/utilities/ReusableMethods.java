@@ -318,6 +318,3 @@ public class ReusableMethods {
             throw new Exception("No element is returned");
         }
     }
-
-
-}
