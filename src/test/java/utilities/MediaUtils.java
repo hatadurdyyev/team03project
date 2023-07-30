@@ -13,7 +13,7 @@ import java.util.Date;
 public class MediaUtils {
 
     /*
-  This method captures sscreenshot of the entire page
+  This method captures screenshot of the entire page
    */
     public static void takeScreenshotOfTheEntirePage() throws IOException {
 //        1. TakeScreenShot class with getScreenShotAs method to capture the screenshot

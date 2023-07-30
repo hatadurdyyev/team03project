@@ -27,7 +27,7 @@ Feature: US_04_TC01_UI Admin should be able to add Dean
 
     Examples:
       | addDeanName | addDeanSurname | addDeanBirthPlace | addDeanDateOfBirth | selectDeanGender | addDeanPhoneNumber | addDeanSSN  | addDeanUsername | addDeanPassword |
-      | John        | Doe            | Toronto           | 01/01/2001         | 1                | 123-123-4385       | 321-12-4385 | johndoe85       | JDoe2001@       |
+      | John        | Doe            | Toronto           | 01/01/2001         | 1                | 123-123-4387       | 321-12-4387 | johndoe87       | JDoe2001@       |
 
   Scenario Outline: Add a new Dean with invalid information
 

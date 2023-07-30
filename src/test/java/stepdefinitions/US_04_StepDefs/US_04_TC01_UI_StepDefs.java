@@ -1,9 +1,9 @@
-package stepdefinitions.US_04;
+package stepdefinitions.US_04_StepDefs;
 
 import io.cucumber.java.en.Given;
 import pages.DeanMngPage;
+import pages.LoginPage;
 import pages.MenuPage;
-import utilities.JSUtils;
 import utilities.MediaUtils;
 import utilities.ReusableMethods;
 import utilities.WaitUtils;
@@ -15,10 +15,12 @@ import static org.junit.Assert.assertTrue;
 public class US_04_TC01_UI_StepDefs {
 
     MenuPage menuPage = new MenuPage();
+   // LoginPage loginPage=new LoginPage();
     DeanMngPage deanMngPage = new DeanMngPage();
 
     @Given("admin clicks dean management link")
     public void admin_clicks_dean_management_link() throws IOException {
+        //loginPage.loginButton.click();
         menuPage.deanManagementButton.click();
         MediaUtils.takeScreenshotOfTheEntirePage();
     }
