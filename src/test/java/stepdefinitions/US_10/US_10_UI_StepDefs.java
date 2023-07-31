@@ -83,7 +83,7 @@ public class US_10_UI_StepDefs {
     }
     @When("user select a start time")
     public void user_select_a_start_time() {
-        viceDeanMngPage.startTime.sendKeys("09:09"); //(//*[@value='09:00'])[1]
+        viceDeanMngPage.startTime.sendKeys("09:00"); //(//*[@value='09:00'])[1]
     }
 
     @When("user clicks on select Stop Time dropdown")
@@ -93,7 +93,7 @@ public class US_10_UI_StepDefs {
     }
     @When("user select a stop time")
     public void user_select_a_stop_time() {
-        viceDeanMngPage.stopTime.sendKeys("17:17");//(//*[@value='17:00'])[1]
+        viceDeanMngPage.stopTime.sendKeys("17:00");//(//*[@value='17:00'])[1]
     }
 
     @And("user clicks on Submit button")

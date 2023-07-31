@@ -65,10 +65,11 @@ public class ViceDeanMngPage {
     public WebElement chooseDay;
     @FindBy(id = "educationTermId")
     public WebElement eduTerm;
-    @FindBy(id = "startTime")
+    @FindBy(xpath= "(//input[@type='time'])[1]")
     public WebElement startTime;
-    @FindBy(id = "stopTime")
+    @FindBy(xpath= "(//input[@type='time'])[2]")
     public WebElement stopTime;
+
     @FindBy(xpath = "(//button[.='Submit'])[3]")
     public WebElement submitButton;
     @FindBy(id = "lessonProgramId")
